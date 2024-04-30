@@ -1,0 +1,85 @@
+.footer {
+  display: flex;
+  background-color: var(--bg-cololr);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-social-media {
+  display: flex;
+}
+.logo-footer {
+  color: #fff;
+}
+.logo-footer:visited {
+  color: #fff;
+}
+.address {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-contact {
+  color: var(--add-color);
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+  text-decoration: none;
+}
+.footer-contact:first-child {
+  color: #fff;
+}
+.social-media-footer {
+  margin-left: 10px;
+}
+.sm-title {
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+.sm-list {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  margin-left: 70px;
+}
+.sm-item {
+  margin-right: 10px;
+
+  transition-property: background-color, border-radius;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sm-item:hover {
+  background-color: var(--acceent-color);
+  border-radius: 50%;
+}
+.sm-link {
+  height: 44px;
+  width: 44px;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+}
+.sm-icon {
+  fill: #fff;
+}
+.rosette {
+  margin-left: 93px;
+}
+.rosette-title {
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+}
+.rosette-icon {
+  position: relative;
+  left: 537px;
+  bottom: 38px;
+}
