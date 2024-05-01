@@ -13,7 +13,7 @@
   border: none;
   background-color: #f5f4fa;
   padding: 6px 25px;
-
+  margin-bottom: 50px;
   transition-property: cusror, color, background, border-radius, border-style,
     padding;
   transition-duration: 250ms;
@@ -64,12 +64,7 @@
   margin-left: 24px;
   padding-bottom: 20px;
 }
-.box {
-  position: relative;
-  overflow: hidden;
-}
 .box-description {
-  position: absolute;
   font-size: 18px;
   line-height: 156%;
   letter-spacing: 0.03em;
@@ -84,8 +79,6 @@
   padding-left: 24px;
   transform: translateY(100%);
 }
-.projects-item:hover .box,
-.box-description {
-  overflow: visible;
-  transform: translateY(0);
-}
+// .box-description:hover {
+//   transform: translateY(0);
+// }
