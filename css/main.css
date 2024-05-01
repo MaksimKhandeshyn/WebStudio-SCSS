@@ -635,6 +635,10 @@ img {
   transition-duration: 250ms;
 }
 
+.contact-icon {
+  margin-right: 10px;
+}
+
 .contact-link:focus,
 .contact-link:hover {
   color: var(--acceent-color);
