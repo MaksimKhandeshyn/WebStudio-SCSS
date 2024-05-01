@@ -645,6 +645,13 @@ img {
   fill: var(--acceent-color);
 }
 
+.modal-title {
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--main-color);
+}
+
 .modal-form {
   display: flex;
   flex-wrap: wrap;
