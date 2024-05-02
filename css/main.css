@@ -44,6 +44,8 @@
   transition-property: box-shadow, cursor, overflow, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
 }
 
 .projects-item:hover {
@@ -72,6 +74,7 @@
 }
 
 .box-description {
+  position: absolute;
   font-size: 18px;
   line-height: 156%;
   letter-spacing: 0.03em;
@@ -79,12 +82,15 @@
   background-color: rgba(33, 150, 243, 0.9);
   bottom: 0;
   width: 359px;
-  height: 284px;
+  height: 294px;
   display: flex;
-  justify-content: center;
   align-items: center;
   padding-left: 24px;
   transform: translateY(100%);
+}
+
+.projects-item:hover .box-description {
+  transform: translateY(-35%);
 }
 
 .hero {

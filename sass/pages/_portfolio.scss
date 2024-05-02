@@ -37,10 +37,11 @@
 .projects-item {
   flex-basis: calc(100% / 3 - 30px);
   border: 1px solid #eee;
-
   transition-property: box-shadow, cursor, overflow, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
 }
 .projects-item:hover {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
@@ -65,6 +66,7 @@
   padding-bottom: 20px;
 }
 .box-description {
+  position: absolute;
   font-size: 18px;
   line-height: 156%;
   letter-spacing: 0.03em;
@@ -72,13 +74,13 @@
   background-color: rgba(33, 150, 243, 0.9);
   bottom: 0;
   width: 359px;
-  height: 284px;
+  height: 294px;
   display: flex;
-  justify-content: center;
   align-items: center;
   padding-left: 24px;
   transform: translateY(100%);
+  
 }
-// .box-description:hover {
-//   transform: translateY(0);
-// }
+.projects-item:hover .box-description {
+  transform: translateY(-35%);
+}
