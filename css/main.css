@@ -35,7 +35,7 @@
   flex-wrap: wrap;
   gap: 30px;
   padding-top: 50px;
-  padding-bottom: 94px;
+  margin-bottom: 94px;
 }
 
 .projects-item {
@@ -780,6 +780,7 @@ img {
 }
 
 .rossete-input {
+  color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   width: 358px;
