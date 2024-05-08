@@ -21,7 +21,7 @@
   width: 696px;
 }
 .hero-btn {
-  background: var(--acceent-color);
+  background: $accent-color;
   color: #fff;
   font-weight: 700;
   line-height: 1.87;
@@ -74,14 +74,14 @@
   border-radius: 4px;
 }
 .praiser-title {
-  color: var(--main-color);
+  color: $main-color;
   font-size: 14px;
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-top: 30px;
 }
 .praiser-info {
-  color: var(--add-color);
+  color: $add-color;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.42px;
@@ -92,7 +92,7 @@
   padding-bottom: 94px;
 }
 .what-we-doing-title {
-  color: var(--main-color);
+  color: $main-color;
   text-align: center;
   font-size: 36px;
   letter-spacing: 1.08px;
@@ -146,21 +146,21 @@
   height: 428px;
 }
 .team-title {
-  color: var(--main-color);
+  color: $main-color;
   text-align: center;
   font-size: 36px;
   letter-spacing: 1.08px;
   padding-bottom: 50px;
 }
 .name {
-  color: var(--main-color);
+  color: $main-color;
   text-align: center;
   font-size: 16px;
   letter-spacing: 0.48px;
   padding-top: 30px;
 }
 .position {
-  color: var(--add-color);
+  color: $add-color;
   text-align: center;
   letter-spacing: 0.48px;
   padding-top: 10px;
@@ -188,7 +188,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-media-link:hover {
-  background-color: var(--acceent-color);
+  background-color: $accent-color;
   border-radius: 50%;
 }
 .social-media-link:hover .social-media {
@@ -205,7 +205,7 @@
   text-align: center;
   font-size: 36px;
   letter-spacing: 0.03em;
-  color: var(--main-color);
+  color: $main-color;
 }
 .clients-list {
   display: flex;
@@ -224,17 +224,17 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-item:hover {
-  border: 1px solid var(--acceent-color);
+  border: 1px solid $accent-color;
   border-radius: 4px;
   cursor: pointer;
 }
 .clients-icon {
   width: 106px;
   height: 60px;
-  fill: var(--add-color);
+  fill: $add-color;
 }
 .clients-item:hover .clients-icon {
-  fill: var(--acceent-color);
+  fill: $accent-color;
 }
 .clients-link {
   margin: 16px 32px;

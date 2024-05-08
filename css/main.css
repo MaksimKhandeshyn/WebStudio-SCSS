@@ -306,7 +306,7 @@
 }
 
 .social-media-link:hover {
-  background-color: var(--acceent-color);
+  background-color: #2196f3;
   border-radius: 50%;
 }
 
@@ -348,7 +348,7 @@
 }
 
 .clients-item:hover {
-  border: 1px solid var(--acceent-color);
+  border: 1px solid #2196f3;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -356,22 +356,15 @@
 .clients-icon {
   width: 106px;
   height: 60px;
-  fill: var(--add-color);
+  fill: #757575;
 }
 
 .clients-item:hover .clients-icon {
-  fill: var(--acceent-color);
+  fill: #2196f3;
 }
 
 .clients-link {
   margin: 16px 32px;
-}
-
-:root {
-  --acceent-color: #2196f3;
-  --main-color: #212121;
-  --add-color: #757575;
-  --bg-cololr: #2f303a;
 }
 
 html {
@@ -433,7 +426,7 @@ img {
 }
 
 .hero-btn {
-  background: var(--acceent-color);
+  background: #2196f3;
   color: #fff;
   font-weight: 700;
   line-height: 1.87;
@@ -461,7 +454,7 @@ img {
 }
 
 .send-btn {
-  background: var(--acceent-color);
+  background: #2196f3;
   color: #fff;
   font-weight: 700;
   line-height: 1.87;
@@ -485,7 +478,7 @@ img {
   border-radius: 4px;
   width: 200px;
   height: 50px;
-  background: var(--acceent-color);
+  background: #2196f3;
   border: none;
   font-size: 16px;
   line-height: 187%;
@@ -511,7 +504,7 @@ img {
   border-radius: 4px;
   padding: 6px 25px;
   border-style: none;
-  background: var(--acceent-color);
+  background: #2196f3;
   color: #fff;
   cursor: pointer;
 }
@@ -539,7 +532,7 @@ img {
 }
 
 .first-part-logo {
-  color: var(--acceent-color);
+  color: #2196f3;
   font-weight: 700;
   letter-spacing: 0.78px;
 }
@@ -604,7 +597,7 @@ img {
 }
 
 .nav-link {
-  color: var(--main-color);
+  color: #212121;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
@@ -615,7 +608,7 @@ img {
 
 .nav-link:focus,
 .nav-link:hover {
-  color: var(--acceent-color);
+  color: #2196f3;
 }
 
 .contact-list {
@@ -630,7 +623,7 @@ img {
 }
 
 .contact-link {
-  color: var(--add-color);
+  color: #757575;
   font-size: 14px;
   letter-spacing: 0.28px;
   margin-left: 10px;
@@ -647,15 +640,15 @@ img {
 
 .contact-link:focus,
 .contact-link:hover {
-  color: var(--acceent-color);
-  fill: var(--acceent-color);
+  color: #2196f3;
+  fill: #2196f3;
 }
 
 .modal-title {
   font-size: 20px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--main-color);
+  color: #212121;
 }
 
 .modal-form {
@@ -707,7 +700,7 @@ img {
 .form-label {
   font-size: 12px;
   letter-spacing: 0.01em;
-  color: var(--add-color);
+  color: #757575;
 }
 
 .form-input {
@@ -723,9 +716,9 @@ img {
 }
 
 .form-input:focus {
-  border: 1px solid var(--acceent-color);
+  border: 1px solid #2196f3;
   border-radius: 4px;
-  fill: var(--acceent-color);
+  fill: #2196f3;
 }
 
 .form-comment {
@@ -746,16 +739,16 @@ img {
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.03em;
-  color: var(--add-color);
+  color: #757575;
   margin-left: 8px;
 }
 
 .rules-link {
-  color: var(--acceent-color);
+  color: #2196f3;
 }
 
 .send-btn {
-  background: var(--acceent-color);
+  background: #2196f3;
   color: #fff;
   font-weight: 700;
   line-height: 1.87;
@@ -791,7 +784,7 @@ img {
 
 .footer {
   display: flex;
-  background-color: var(--bg-cololr);
+  background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -815,7 +808,7 @@ img {
 }
 
 .footer-contact {
-  color: var(--add-color);
+  color: #757575;
   font-size: 14px;
   font-style: normal;
   line-height: 1.71;
@@ -854,7 +847,7 @@ img {
 }
 
 .sm-item:hover {
-  background-color: var(--acceent-color);
+  background-color: #2196f3;
   border-radius: 50%;
 }
 

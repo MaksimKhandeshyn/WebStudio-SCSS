@@ -1,9 +1,13 @@
-:root {
-  --acceent-color: #2196f3;
-  --main-color: #212121;
-  --add-color: #757575;
-  --bg-cololr: #2f303a;
-}
+// :root {
+//   --acceent-color: #2196f3;
+//   --main-color: #212121;
+//   --add-color: #757575;
+//   --bg-cololr: #2f303a;
+// }
+$accent-color: #2196f3;
+$main-color: #212121;
+$add-color: #757575;
+$bg-color: #2f303a;
 
 html {
   box-sizing: border-box;
