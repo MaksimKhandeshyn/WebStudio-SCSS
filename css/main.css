@@ -444,10 +444,9 @@ img {
   overflow: hidden;
 }
 
-.projects-item:hover .box-description {
+.projects-item:hover {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
   cursor: pointer;
-  transform: translateY(-35%);
 }
 
 .projects-title {
@@ -480,6 +479,13 @@ img {
   align-items: center;
   padding-left: 24px;
   transform: translateY(100%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.projects-item:hover .box-description {
+  transform: translateY(-35%);
 }
 
 .header {
