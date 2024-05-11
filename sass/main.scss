@@ -1,12 +1,8 @@
-@import 'pages/portfolio'; // без .scss
-@import 'pages/home';
-
-
 @import 'base/reset';
-
-@import 'components/buttons';
 @import 'components/container';
-
+@import 'components/buttons';
+@import 'pages/home';
+@import 'pages/portfolio'; 
 @import 'layout/header';
 @import 'layout/navigation';
 @import 'layout/contact';
