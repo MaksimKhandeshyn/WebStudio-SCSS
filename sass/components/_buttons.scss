@@ -38,10 +38,10 @@
   transition: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: box-shadow, background;
   transition-duration: 250ms;
-}
-.send-btn:hover {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background: #188ce8;
+  &:hover {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: #188ce8;
+  }
 }
 .rossete-btn {
   border-radius: 4px;
@@ -66,12 +66,12 @@
   transition-property: cusror, color, background, border-radius, border-style, padding;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.filter-btn:hover {
-  border-radius: 4px;
-  padding: 6px 25px;
-  border-style: none;
-  background: $accent-color;
-  color: #fff;
-  cursor: pointer;
+  &:hover {
+    border-radius: 4px;
+    padding: 6px 25px;
+    border-style: none;
+    background: $accent-color;
+    color: #fff;
+    cursor: pointer;
+  }
 }

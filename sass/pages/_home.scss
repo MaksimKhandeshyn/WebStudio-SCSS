@@ -115,6 +115,13 @@
   padding-top: 94px;
   background-color: #f5f4fa;
   margin-bottom: 0;
+  .team-title {
+      color: $main-color;
+      text-align: center;
+      font-size: 36px;
+      letter-spacing: 1.08px;
+      padding-bottom: 50px;
+    }
   .team-list {
     display: flex;
     gap: 30px;
@@ -129,13 +136,7 @@
     border-bottom-right-radius: 8px;
     width: 270px;
     height: 428px;
-    .team-title {
-      color: $main-color;
-      text-align: center;
-      font-size: 36px;
-      letter-spacing: 1.08px;
-      padding-bottom: 50px;
-    }
+    
     .name {
       color: $main-color;
       text-align: center;
@@ -170,13 +171,13 @@
       transition-property: background-color, border-radius, fill;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    .social-media-link:hover {
-      background-color: $accent-color;
-      border-radius: 50%;
-    }
-    .social-media-link:hover .social-media {
-      fill: #fff;
+      &:hover {
+        background-color: $accent-color;
+        border-radius: 50%;
+      }
+      &:hover .social-media {
+        fill: #fff;
+      }
     }
     .social-media {
       fill: #afb1b8;
@@ -203,18 +204,19 @@
       display: flex;
       justify-content: center;
       margin-left: 30px;
-    
+
       transition-property: border, border-radius, cursor, fill;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover {
+        border: 1px solid $accent-color;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      &:hover .clients-icon {
+        fill: $accent-color;
+      }
     }
-    .clients-item:hover {
-      border: 1px solid $accent-color;
-      border-radius: 4px;
-      cursor: pointer;
-    }.clients-item:hover .clients-icon {
-    fill: $accent-color;
-  }
   }
   .clients-icon {
     width: 106px;
