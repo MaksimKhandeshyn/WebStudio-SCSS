@@ -1,47 +1,49 @@
 .product {
   padding-top: 94px;
 }
-.filter-list {
+.product__filter-list {
   display: flex;
   justify-content: center;
   gap: 8px;
 }
-.projects-list {
+.product__projects-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   padding-top: 50px;
   margin-bottom: 94px;
+
+  .product__projects-item {
+    flex-basis: calc(100% / 3 - 30px);
+    border: 1px solid #eee;
+    transition-property: box-shadow, cursor, overflow, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    .product__projects-title {
+      font-size: 18px;
+      line-height: 2;
+      letter-spacing: 1.08px;
+      padding-top: 20px;
+      margin-left: 24px;
+    }
+    .product__projects-info {
+      color: $add-color;
+      line-height: 1.87;
+      letter-spacing: 0.48px;
+      margin-left: 24px;
+      padding-bottom: 20px;
+    }
+  }
+  .product__projects-item:hover {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+      0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+  }
 }
-.projects-item {
-  flex-basis: calc(100% / 3 - 30px);
-  border: 1px solid #eee;
-  transition-property: box-shadow, cursor, overflow, transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  overflow: hidden;
-}
-.projects-item:hover{
-  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
-    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-  cursor: pointer;
-}
-.projects-title {
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 1.08px;
-  padding-top: 20px;
-  margin-left: 24px;
-}
-.projects-info {
-  color: $add-color;
-  line-height: 1.87;
-  letter-spacing: 0.48px;
-  margin-left: 24px;
-  padding-bottom: 20px;
-}
-.box-description {
+
+.product__box-description {
   position: absolute;
   font-size: 18px;
   line-height: 156%;
@@ -59,6 +61,6 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.projects-item:hover .box-description { 
+.product__projects-item:hover .product__box-description {
   transform: translateY(-35%);
 }

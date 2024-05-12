@@ -1,15 +1,15 @@
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
-}
-.logo {
-  font-family: Raleway;
-  font-size: 26px;
-  letter-spacing: 0.78px;
-  color: #000;
-}
-.first-part-logo {
-  color: $accent-color;
-  font-weight: 700;
-  letter-spacing: 0.78px;
+  .logo {
+    font-family: Raleway;
+    font-size: 26px;
+    letter-spacing: 0.78px;
+    color: #000;
+  }
+  .first-part-logo {
+    color: $accent-color;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+  }
 }
