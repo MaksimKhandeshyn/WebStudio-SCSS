@@ -73,7 +73,7 @@ img {
   padding: 0 15px;
 }
 
-.hero-btn {
+.main__hero-btn {
   background: #2196f3;
   color: #fff;
   font-weight: 700;
@@ -163,7 +163,7 @@ img {
   padding-bottom: 200px;
   margin: 0 auto;
 }
-.hero .hero-title {
+.hero .main__hero-title {
   color: #fff;
   text-align: center;
   font-size: 44px;
@@ -204,20 +204,20 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.praise .praise-list {
+.praise .strength__praise-list {
   display: flex;
 }
-.praise .praise-list .praiser-item {
+.praise .strength__praise-list .strength__praiser-item {
   margin-right: 30px;
 }
-.praise .praise-list .praiser-title {
+.praise .strength__praise-list .strength__praiser-title {
   color: #212121;
   font-size: 14px;
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-top: 30px;
 }
-.praise .praise-list .praiser-info {
+.praise .strength__praise-list .strength__praiser-info {
   color: #757575;
   font-size: 14px;
   line-height: 1.71;
@@ -225,7 +225,7 @@ img {
   padding-top: 10px;
 }
 
-.icon-container {
+.strength__icon-container {
   padding: 25px 100px;
   width: 270px;
   background-color: #f5f4fa;
@@ -237,22 +237,22 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.what-we-doing .what-we-doing-title {
+.what-we-doing .job__what-we-doing-title {
   color: #212121;
   text-align: center;
   font-size: 36px;
   letter-spacing: 1.08px;
   padding-bottom: 50px;
 }
-.what-we-doing .what-we-doing-list {
+.what-we-doing .job__what-we-doing-list {
   display: flex;
   gap: 30px;
 }
-.what-we-doing .what-we-doing-list .what-we-are-doing-item {
+.what-we-doing .job__what-we-doing-list .job__what-we-are-doing-item {
   flex-basis: 370px;
   position: relative;
 }
-.what-we-doing .what-we-are-doing-container {
+.what-we-doing .job__what-we-are-doing-container {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -264,7 +264,7 @@ img {
   justify-content: center;
   align-items: center;
 }
-.what-we-doing .what-we-are-doing-container .name-photo {
+.what-we-doing .job__what-we-are-doing-container .job__name-photo {
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -277,18 +277,18 @@ img {
   background-color: #f5f4fa;
   margin-bottom: 0;
 }
-.team .team-title {
+.team .staff__team-title {
   color: #212121;
   text-align: center;
   font-size: 36px;
   letter-spacing: 1.08px;
   padding-bottom: 50px;
 }
-.team .team-list {
+.team .staff__team-list {
   display: flex;
   gap: 30px;
 }
-.team .team-item {
+.team .staff__team-item {
   flex-basis: calc(100% - 30px);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   background-color: #fff;
@@ -298,31 +298,31 @@ img {
   width: 270px;
   height: 428px;
 }
-.team .team-item .name {
+.team .staff__team-item .staff__name {
   color: #212121;
   text-align: center;
   font-size: 16px;
   letter-spacing: 0.48px;
   padding-top: 30px;
 }
-.team .team-item .position {
+.team .staff__team-item .staff__position {
   color: #757575;
   text-align: center;
   letter-spacing: 0.48px;
   padding-top: 10px;
   margin-bottom: 30px;
 }
-.team .social-media-list {
+.team .staff__social-media-list {
   display: flex;
   justify-content: center;
 }
-.team .social-media-list .social-media-item {
+.team .staff__social-media-list .staff__social-media-item {
   margin-right: 10px;
 }
-.team .social-media-list .social-media-container {
+.team .staff__social-media-list .staff__social-media-container {
   display: flex;
 }
-.team .social-media-list .social-media-link {
+.team .staff__social-media-list .staff__social-media-link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -332,14 +332,14 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team .social-media-list .social-media-link:hover {
+.team .staff__social-media-list .staff__social-media-link:hover {
   background-color: #2196f3;
   border-radius: 50%;
 }
-.team .social-media-list .social-media-link:hover .social-media {
+.team .staff__social-media-list .staff__social-media-link:hover .social-media {
   fill: #fff;
 }
-.team .social-media-list .social-media {
+.team .staff__social-media-list .social-media {
   fill: #afb1b8;
 }
 
@@ -347,18 +347,18 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.clients .clients-title {
+.clients .logo__clients-title {
   text-align: center;
   font-size: 36px;
   letter-spacing: 0.03em;
   color: #212121;
 }
-.clients .clients-list {
+.clients .logo__clients-list {
   display: flex;
   justify-content: center;
   margin-top: 50px;
 }
-.clients .clients-list .clients-item {
+.clients .logo__clients-list .logo__clients-item {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   display: flex;
@@ -368,20 +368,20 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients .clients-list .clients-item:hover {
+.clients .logo__clients-list .logo__clients-item:hover {
   border: 1px solid #2196f3;
   border-radius: 4px;
   cursor: pointer;
 }
-.clients .clients-list .clients-item:hover .clients-icon {
+.clients .logo__clients-list .logo__clients-item:hover .logo__clients-icon {
   fill: #2196f3;
 }
-.clients .clients-icon {
+.clients .logo__clients-icon {
   width: 106px;
   height: 60px;
   fill: #757575;
 }
-.clients .clients-link {
+.clients .logo__clients-link {
   margin: 16px 32px;
 }
 
@@ -671,6 +671,17 @@ img {
 }
 .footer .footer-social-media {
   display: flex;
+}
+.footer .logo {
+  font-family: Raleway;
+  font-size: 26px;
+  letter-spacing: 0.78px;
+  color: #000;
+}
+.footer .first-part-logo {
+  color: #2196f3;
+  font-weight: 700;
+  letter-spacing: 0.78px;
 }
 .footer .logo-footer {
   color: #fff;

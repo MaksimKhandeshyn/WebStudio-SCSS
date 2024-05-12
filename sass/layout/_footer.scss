@@ -6,6 +6,17 @@
   .footer-social-media {
     display: flex;
   }
+  .logo {
+    font-family: Raleway;
+    font-size: 26px;
+    letter-spacing: 0.78px;
+    color: #000;
+  }
+  .first-part-logo {
+    color: $accent-color;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+  }
   .logo-footer {
     color: #fff;
   }
@@ -49,10 +60,10 @@
       transition-property: background-color, border-radius;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    .sm-item:hover {
-      background-color: $accent-color;
-      border-radius: 50%;
+      &:hover {
+        background-color: $accent-color;
+        border-radius: 50%;
+      }
     }
     .sm-link {
       height: 44px;
