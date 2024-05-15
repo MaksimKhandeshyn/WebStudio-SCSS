@@ -1,0 +1,27 @@
+%transtion {
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: box-shadow, background, color, fill, background-color,
+    border-radius, border, content, width, height, position, top, left, cursor,
+    overflow, transform;
+  transition-duration: 250ms;
+}
+%input-form {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 448px;
+  height: 40px;
+  padding-left: 42px;
+  outline: none;
+}
+%focus-form {
+  border: 1px solid $accent-color;
+  border-radius: 4px;
+  fill: $accent-color;
+}
+%hover-header {
+  content: "";
+  border-radius: 2px;
+  background: $accent-color;
+  position: absolute;
+  top: 50px;
+}

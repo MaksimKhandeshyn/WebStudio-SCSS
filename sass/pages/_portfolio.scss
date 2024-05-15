@@ -16,9 +16,7 @@
   .product__projects-item {
     flex-basis: calc(100% / 3 - 30px);
     border: 1px solid #eee;
-    transition-property: box-shadow, cursor, overflow, transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transtion;
     position: relative;
     overflow: hidden;
     .product__projects-title {

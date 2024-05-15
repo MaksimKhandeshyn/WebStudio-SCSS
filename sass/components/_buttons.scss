@@ -35,9 +35,10 @@
   padding: 10px 52px;
   margin: 0 auto;
   margin-top: 30px;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: box-shadow, background;
-  transition-duration: 250ms;
+  // transition: cubic-bezier(0.4, 0, 0.2, 1);
+  // transition-property: box-shadow, background;
+  // transition-duration: 250ms;
+  @extend %transtion;
   &:hover {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: #188ce8;
@@ -49,12 +50,11 @@
   height: 50px;
   background: $accent-color;
   border: none;
-  font-size: 16px;
   line-height: 187%;
   letter-spacing: 0.06em;
-  text-align: center;
   color: #fff;
   margin-left: 12px;
+  padding-right: 28px;
 }
 .product__filter-btn {
   font-weight: 500;

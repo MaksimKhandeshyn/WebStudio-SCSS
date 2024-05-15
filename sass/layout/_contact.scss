@@ -13,10 +13,7 @@
     margin-left: 10px;
     display: flex;
     align-items: center;
-
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: color, fill;
-    transition-duration: 250ms;
+    @extend %transtion;
     &:focus,
     &:hover {
       color: $accent-color;

@@ -57,9 +57,7 @@
     .sm-item {
       margin-right: 10px;
   
-      transition-property: background-color, border-radius;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      @extend %transtion;
       &:hover {
         background-color: $accent-color;
         border-radius: 50%;
@@ -85,6 +83,7 @@
       letter-spacing: 0.03em;
       text-transform: uppercase;
       color: #fff;
+      padding-right: 62px;
     }
     .rosette-icon {
       position: relative;

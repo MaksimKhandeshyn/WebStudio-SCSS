@@ -27,49 +27,30 @@
       left: 52px;
     }
     .form-label {
-      font-size: 12px;
+      font-size: 12px;//сделать с помощью миксинов
       letter-spacing: 0.01em;
       color: $add-color;
     }
     .form-input {
-      border: 1px solid rgba(33, 33, 33, 0.2);
-      border-radius: 4px;
-      width: 448px;
-      height: 40px;
-      padding-left: 42px;
-      outline: none;
-
-      transition-property: border, border-radius, fill;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      @extend %input-form;
+      @extend %transtion;
       &:focus {
-        border: 1px solid $accent-color;
-        border-radius: 4px;
-        fill: $accent-color;
+        @extend %focus-form;
       }
     }
   }
   .form-comment {
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    width: 448px;
-    height: 40px;
-    padding-left: 42px;
-    outline: none;
+    @extend %input-form;
     padding-left: 16px;
     padding-top: 12px;
     height: 138px;
-    font-size: 12px;
+    font-size: 12px;//сделать с помощью миксинов
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
     resize: none;
-    transition-property: border, border-radius, fill, color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transtion;
     &:focus {
-      border: 1px solid $accent-color;
-      border-radius: 4px;
-      fill: $accent-color;
+      @extend %focus-form;
       color: black;
     }
   }
