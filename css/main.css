@@ -122,15 +122,15 @@ img {
 }
 
 .modal-btn {
-  position: relative;
-  left: 490px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 100px;
-  background-color: transparent;
-  height: 30px;
   width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
+  position: relative;
+  left: 490px;
+  background-color: transparent;
   margin-top: 8px;
 }
 
@@ -143,11 +143,11 @@ img {
 }
 
 .rossete-btn {
+  border: none;
   border-radius: 4px;
   width: 200px;
   height: 50px;
   background: #2196f3;
-  border: none;
   line-height: 187%;
   letter-spacing: 0.06em;
   color: #fff;
@@ -164,20 +164,20 @@ img {
   padding: 6px 25px;
 }
 .product__filter-btn:hover {
+  border: none;
   border-radius: 4px;
   padding: 6px 25px;
-  border-style: none;
   background: #2196f3;
   color: #fff;
   cursor: pointer;
 }
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   width: 1600px;
   background-image: url("../images/hero-bg.jpg"), linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4));
   background-repeat: no-repeat;
-  padding-top: 200px;
-  padding-bottom: 200px;
   margin: 0 auto;
 }
 .hero .main__hero-title {
@@ -271,9 +271,9 @@ img {
   letter-spacing: 0.03em;
   display: flex;
   align-items: center;
-  right: 0;
-  width: 370px;
+  width: 360px;
   height: 70px;
+  right: 0;
   justify-content: center;
   text-transform: uppercase;
   text-align: center;
@@ -448,13 +448,13 @@ img {
 
 .header {
   padding-top: 24px;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
 }
 .header .logo {
   font-family: Raleway;
+  color: #000;
   font-size: 26px;
   letter-spacing: 0.78px;
-  color: #000;
 }
 .header .first-part-logo {
   color: #2196f3;
@@ -499,8 +499,8 @@ img {
 .nav .nav-link {
   color: #212121;
   font-size: 14px;
-  font-weight: 500;
   letter-spacing: 0.28px;
+  font-weight: 500;
 }
 .nav .nav-link:focus, .nav .nav-link:hover {
   color: #2196f3;
@@ -532,10 +532,10 @@ img {
 }
 
 .modal-title {
-  font-size: 20px;
-  letter-spacing: 0.03em;
-  text-align: center;
   color: #212121;
+  font-size: 20px;
+  letter-spacing: 0.03px;
+  text-align: center;
 }
 
 .modal-form {
@@ -584,10 +584,10 @@ img {
   display: flex;
 }
 .rules .rules-text {
-  font-size: 14px;
-  line-height: 171%;
-  letter-spacing: 0.03em;
   color: #757575;
+  font-size: 14px;
+  letter-spacing: 0.03px;
+  line-height: 171%;
   margin-left: 8px;
 }
 .rules .rules-link {
@@ -618,9 +618,9 @@ img {
 }
 .footer .logo {
   font-family: Raleway;
+  color: #000;
   font-size: 26px;
   letter-spacing: 0.78px;
-  color: #000;
 }
 .footer .first-part-logo {
   color: #2196f3;
@@ -641,9 +641,9 @@ img {
 .footer .address .footer-contact {
   color: #757575;
   font-size: 14px;
+  letter-spacing: 0.42px;
   font-style: normal;
   line-height: 1.71;
-  letter-spacing: 0.42px;
   text-decoration: none;
 }
 .footer .address .footer-contact:first-child {
@@ -653,10 +653,10 @@ img {
   margin-left: 10px;
 }
 .footer .social-media-footer .sm-title {
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #fff;
+  font-size: 14px;
+  letter-spacing: 0.03px;
+  text-transform: uppercase;
   text-align: center;
 }
 .footer .social-media-footer .sm-list {
@@ -675,8 +675,8 @@ img {
 .footer .social-media-footer .sm-link {
   display: flex;
   align-items: center;
-  height: 44px;
   width: 44px;
+  height: 44px;
   border-radius: 50%;
   justify-content: center;
   background: rgba(255, 255, 255, 0.1);
@@ -688,10 +688,10 @@ img {
   margin-left: 93px;
 }
 .footer .rosette .rosette-title {
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #fff;
+  font-size: 14px;
+  letter-spacing: 0.03px;
+  text-transform: uppercase;
   padding-right: 62px;
 }
 .footer .rosette .rosette-icon {

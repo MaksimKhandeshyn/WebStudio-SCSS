@@ -5,14 +5,12 @@
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .modal-btn {
+  @include wh(30px, 30px);
+  @include display (flex, center);
+  @include border(1px solid rgba(0, 0, 0, 0.1), 100px);
   position: relative;
   left: 490px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 100px;
   background-color: transparent;
-  height: 30px;
-  width: 30px;
-  @include display (flex, center);
   margin-top: 8px;
 }
 .send-btn {
@@ -25,11 +23,9 @@
   }
 }
 .rossete-btn {
-  border-radius: 4px;
-  width: 200px;
-  height: 50px;
+  @include border(none, 4px);
+  @include wh(200px, 50px);
   background: $accent-color;
-  border: none;
   line-height: 187%;
   letter-spacing: 0.06em;
   color: #fff;
@@ -45,9 +41,8 @@
   padding: 6px 25px;
   @extend %transtion;
   &:hover {
-    border-radius: 4px;
+    @include border(none, 4px);
     padding: 6px 25px;
-    border-style: none;
     background: $accent-color;
     color: #fff;
     cursor: pointer;

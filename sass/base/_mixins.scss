@@ -27,3 +27,11 @@
     padding-top: $pt;
     padding-bottom: $pb;
 }
+@mixin border($border, $border-r) {
+  border: $border;
+  border-radius: $border-r;
+}
+@mixin wh($width, $height) {
+  width: $width;
+  height: $height;
+}

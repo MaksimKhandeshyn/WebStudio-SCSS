@@ -1,9 +1,9 @@
 .hero {
+  @include paddings(200px, 200px);
   width: 1600px;
   background-image: url("../images/hero-bg.jpg"),
     linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4));
   background-repeat: no-repeat;
-  @include paddings(200px, 200px);
   margin: 0 auto;
   .main__hero-title {
     @include cl-txt (#fff, 44px, 2.64px);
@@ -71,9 +71,8 @@
     @include pos(absolute, 0, 76.7%, rgba(47, 48, 58, 0.8));
     @include cl-txt(#fff, 14px, 0.03em);
     @include display(flex, center);
+    @include wh(360px, 70px);
     right: 0;
-    width: 370px;
-    height: 70px;
     justify-content: center;
     text-transform: uppercase;
     text-align: center;
@@ -155,16 +154,14 @@
     justify-content: center;
     margin-top: 50px;
     .logo__clients-item {
-      border: 1px solid #afb1b8;
-      border-radius: 4px;
+      @include border(1px solid #afb1b8, 4px);
       display: flex;
       justify-content: center;
       margin-left: 30px;
 
       @extend %transtion;
       &:hover {
-        border: 1px solid $accent-color;
-        border-radius: 4px;
+        @include border(1px solid $accent-color, 4px);
         cursor: pointer;
       }
       &:hover .logo__clients-icon {
@@ -173,8 +170,7 @@
     }
   }
   .logo__clients-icon {
-    width: 106px;
-    height: 60px;
+    @include wh(106px, 60px);
     fill: $add-color;
   }
   .logo__clients-link {
