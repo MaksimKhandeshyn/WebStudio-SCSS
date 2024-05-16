@@ -54,8 +54,7 @@
   bottom: 0;
   width: 359px;
   height: 294px;
-  display: flex;
-  align-items: center;
+  @include display (flex, center);
   padding-left: 24px;
   transform: translateY(100%);
   transition-property: transform;

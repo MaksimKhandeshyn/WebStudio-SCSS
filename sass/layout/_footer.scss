@@ -64,11 +64,10 @@
       }
     }
     .sm-link {
+      @include display(flex, center);
       height: 44px;
       width: 44px;
-      display: flex;
       border-radius: 50%;
-      align-items: center;
       justify-content: center;
       background: rgba(255, 255, 255, 0.1);
     }

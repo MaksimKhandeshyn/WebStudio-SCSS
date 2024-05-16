@@ -1,0 +1,20 @@
+@mixin display($flex, $items) {
+  display: $flex;
+  align-items: $items;
+}
+@mixin nav-item($wh, $ht, $lt) {
+  width: $wh;
+  height: $ht;
+  left: $lt;
+}
+@mixin pos($positon, $left, $top, $bg) {
+  position: $positon;
+  top: $top;
+  left: $left;
+  background-color: $bg;
+}
+@mixin cl-txt($color, $fz, $ls) {
+    color: $color;
+    font-size: $fz;
+    letter-spacing: $ls;
+}

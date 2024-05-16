@@ -1,15 +1,7 @@
 .main__hero-btn {
-  background: $accent-color;
-  color: #fff;
-  font-weight: 700;
-  line-height: 1.87;
-  letter-spacing: 0.96px;
-  border: none;
-  border-radius: 4px;
+  @extend %btn;
   padding: 10px 32px;
   display: flex;
-  margin: 0 auto;
-  margin-top: 30px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .modal-btn {
@@ -20,24 +12,12 @@
   background-color: transparent;
   height: 30px;
   width: 30px;
-  display: flex;
-  align-items: center;
+  @include display (flex, center);
   margin-top: 8px;
 }
 .send-btn {
-  background: $accent-color;
-  color: #fff;
-  font-weight: 700;
-  line-height: 1.87;
-  letter-spacing: 0.96px;
-  border: none;
-  border-radius: 4px;
+  @extend %btn;
   padding: 10px 52px;
-  margin: 0 auto;
-  margin-top: 30px;
-  // transition: cubic-bezier(0.4, 0, 0.2, 1);
-  // transition-property: box-shadow, background;
-  // transition-duration: 250ms;
   @extend %transtion;
   &:hover {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -63,9 +43,7 @@
   border: none;
   background-color: #f5f4fa;
   padding: 6px 25px;
-  transition-property: cusror, color, background, border-radius, border-style, padding;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transtion;
   &:hover {
     border-radius: 4px;
     padding: 6px 25px;

@@ -19,12 +19,9 @@
   }
 }
 .backdrop {
-  position: fixed;
-  top: 0;
-  bottom: 0;
+  @include pos(fixed, 0, 0, #2f303a66);
   right: 0;
-  left: 0;
-  background-color: #2f303a66;
+  bottom: 0;
   z-index: 1;
 }
 .backdrop.is-hidden {
@@ -32,13 +29,10 @@
   pointer-events: none;
 }
 .modal {
-  position: absolute;
-  background-color: #fff;
+  @include pos(absolute, 50%, 50%, #fff);
   width: 528px;
   height: 581px;
   transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
 }
 .praise {
   padding-top: 94px;
@@ -49,37 +43,24 @@
       margin-right: 30px;
     }
     .strength__praiser-title {
-      color: $main-color;
-      font-size: 14px;
-      letter-spacing: 0.42px;
+      @include cl-txt($main-color, 14px, 0.42px);
       text-transform: uppercase;
       margin-top: 30px;
     }
     .strength__praiser-info {
-      color: $add-color;
-      font-size: 14px;
+      @include cl-txt($add-color, 14px, 0.42px);
       line-height: 1.71;
-      letter-spacing: 0.42px;
       padding-top: 10px;
     }
   }
-}
-.strength__icon-container {
-  padding: 25px 100px;
-  width: 270px;
-  background-color: #f5f4fa;
-  height: 120px;
-  border-radius: 4px;
 }
 
 .what-we-doing {
   padding-top: 94px;
   padding-bottom: 94px;
   .job__what-we-doing-title {
-    color: $main-color;
+    @include cl-txt($main-color, 36px, 1.08px);
     text-align: center;
-    font-size: 36px;
-    letter-spacing: 1.08px;
     padding-bottom: 50px;
   }
 
@@ -91,37 +72,26 @@
       position: relative;
     }
   }
-  .job__what-we-are-doing-container {
-    position: absolute;
-    bottom: 0;
+  .job__name-photo {
+    @include pos(absolute, 0, 76.7%, rgba(47, 48, 58, 0.8));
+    @include cl-txt(#fff, 14px, 0.03em);
+    @include display(flex, center);
     right: 0;
-    left: 0;
-    background-color: rgba(47, 48, 58, 0.8);
     width: 370px;
     height: 70px;
-    display: flex;
     justify-content: center;
-    align-items: center;
-    .job__name-photo {
-      font-size: 14px;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      text-align: center;
-      color: #fff;
-    }
+    text-transform: uppercase;
+    text-align: center;
   }
 }
 .team {
   padding-top: 94px;
   background-color: #f5f4fa;
-  margin-bottom: 0;
   .staff__team-title {
-      color: $main-color;
-      text-align: center;
-      font-size: 36px;
-      letter-spacing: 1.08px;
-      padding-bottom: 50px;
-    }
+    @include cl-txt($main-color, 36px, 1.08px);
+    text-align: center;
+    padding-bottom: 50px;
+  }
   .staff__team-list {
     display: flex;
     gap: 30px;
@@ -136,12 +106,10 @@
     border-bottom-right-radius: 8px;
     width: 270px;
     height: 428px;
-    
+
     .staff__name {
-      color: $main-color;
+      @include cl-txt($main-color, 16px, 0.48px);
       text-align: center;
-      font-size: 16px;
-      letter-spacing: 0.48px;
       padding-top: 30px;
     }
     .staff__position {
@@ -162,10 +130,9 @@
       display: flex;
     }
     .staff__social-media-link {
-      display: flex;
+      @include display(flex, center);         
       width: 44px;
       height: 44px;
-      align-items: center;
       justify-content: center;
 
       @extend %transtion;
@@ -188,9 +155,7 @@
 
   .logo__clients-title {
     text-align: center;
-    font-size: 36px;
-    letter-spacing: 0.03em;
-    color: $main-color;
+    @include cl-txt($main-color, 36px, 0.03em);
   }
   .logo__clients-list {
     display: flex;
