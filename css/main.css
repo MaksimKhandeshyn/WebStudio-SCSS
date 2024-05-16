@@ -1,4 +1,4 @@
-.footer .social-media-footer .sm-item, .modal-form .form-comment, .modal-form .modal-item .form-input, .contact-list .contact-link, .nav .nav-link, .nav .nav-list .nav-item:nth-child(2)::after, .nav .nav-list .nav-item:first-child::after, .product__projects-list .product__projects-item, .clients .logo__clients-list .logo__clients-item, .team .staff__social-media-list .staff__social-media-link, .product__filter-btn, .send-btn {
+.footer .social-media-footer .sm-item, .modal-form .form-comment, .modal-form .modal-item .form-input, .contact-list .contact-link, .nav .nav-link, .nav .nav-list .nav-item:nth-child(2)::after, .nav .nav-list .nav-item:first-child::after, .product__box-description, .product__projects-list .product__projects-item, .clients .logo__clients-list .logo__clients-item, .team .staff__social-media-list .staff__social-media-link, .product__filter-btn, .send-btn {
   transition: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: box-shadow, background, color, fill, background-color, border-radius, border, content, width, height, position, top, left, cursor, overflow, transform, border-style, padding;
   transition-duration: 250ms;
@@ -182,11 +182,11 @@ img {
 }
 .hero .main__hero-title {
   color: #fff;
-  text-align: center;
   font-size: 44px;
+  letter-spacing: 2.64px;
+  text-align: center;
   font-weight: 900;
   line-height: 1.36;
-  letter-spacing: 2.64px;
   text-transform: uppercase;
   margin: 0 auto;
   width: 696px;
@@ -431,22 +431,19 @@ img {
 }
 
 .product__box-description {
-  position: absolute;
-  font-size: 18px;
-  line-height: 156%;
-  letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
   color: #fff;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  position: absolute;
+  line-height: 156%;
   background-color: rgba(33, 150, 243, 0.9);
   bottom: 0;
   width: 359px;
   height: 294px;
-  display: flex;
-  align-items: center;
   padding-left: 24px;
   transform: translateY(100%);
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header {
@@ -522,9 +519,9 @@ img {
   color: #757575;
   font-size: 14px;
   letter-spacing: 0.28px;
-  margin-left: 10px;
   display: flex;
   align-items: center;
+  margin-left: 10px;
 }
 .contact-list .contact-link:focus, .contact-list .contact-link:hover {
   color: #2196f3;
@@ -566,17 +563,17 @@ img {
   left: 52px;
 }
 .modal-form .modal-item .form-label {
+  color: #757575;
   font-size: 12px;
   letter-spacing: 0.01em;
-  color: #757575;
 }
 .modal-form .form-comment {
+  color: rgba(117, 117, 117, 0.5);
+  font-size: 12px;
+  letter-spacing: 0.01em;
   padding-left: 16px;
   padding-top: 12px;
   height: 138px;
-  font-size: 12px;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
   resize: none;
 }
 .modal-form .form-comment:focus {

@@ -13,8 +13,17 @@
   left: $left;
   background-color: $bg;
 }
+@mixin located-ob($pos, $top, $left) {
+    position: $pos;
+    top: $top;
+    left: $left;
+}
 @mixin cl-txt($color, $fz, $ls) {
     color: $color;
     font-size: $fz;
     letter-spacing: $ls;
+}
+@mixin paddings($pt, $pb) {
+    padding-top: $pt;
+    padding-bottom: $pb;
 }

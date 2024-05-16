@@ -12,24 +12,16 @@
     margin-top: 10px;
     margin-left: 40px;
     .name-icon {
-      position: absolute;
-      top: 112px;
-      left: 52px;
+      @include located-ob(absolute, 112px, 52px);
     }
     .tel-icon {
-      position: absolute;
-      top: 180px;
-      left: 52px;
+      @include located-ob(absolute, 180px, 52px);
     }
     .mail-icon {
-      position: absolute;
-      top: 248px;
-      left: 52px;
+      @include located-ob(absolute, 248px, 52px);
     }
     .form-label {
-      font-size: 12px;//сделать с помощью миксинов
-      letter-spacing: 0.01em;
-      color: $add-color;
+      @include cl-txt ($add-color, 12px, 0.01em);
     }
     .form-input {
       @extend %input-form;
@@ -41,14 +33,12 @@
   }
   .form-comment {
     @extend %input-form;
+    @extend %transtion;
+    @include cl-txt (rgba(117, 117, 117, 0.5), 12px, 0.01em);
     padding-left: 16px;
     padding-top: 12px;
     height: 138px;
-    font-size: 12px;//сделать с помощью миксинов
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
     resize: none;
-    @extend %transtion;
     &:focus {
       @extend %focus-form;
       color: black;

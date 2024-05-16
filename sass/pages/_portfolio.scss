@@ -45,19 +45,15 @@
 }
 
 .product__box-description {
+  @include display (flex, center);
+  @include cl-txt (#fff, 18px, 0.03em);
+  @extend %transtion;
   position: absolute;
-  font-size: 18px;
   line-height: 156%;
-  letter-spacing: 0.03em;
-  color: #fff;
   background-color: rgba(33, 150, 243, 0.9);
   bottom: 0;
   width: 359px;
   height: 294px;
-  @include display (flex, center);
   padding-left: 24px;
   transform: translateY(100%);
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
