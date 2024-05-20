@@ -405,7 +405,6 @@ img {
 .product__projects-list .product__projects-item {
   flex-basis: calc(33.3333333333% - 30px);
   border: 1px solid #eee;
-  position: relative;
   overflow: hidden;
 }
 .product__projects-list .product__projects-item .product__projects-title {
@@ -426,8 +425,14 @@ img {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
   cursor: pointer;
 }
-.product__projects-list .product__projects-item:hover .product__box-description {
-  transform: translateY(-35%);
+.product__projects-list .product__projects-item:hover .product__box-hover .product__box-description {
+  transform: translateY(0%);
+}
+
+.product__box-hover {
+  height: 284px;
+  position: relative;
+  overflow: hidden;
 }
 
 .product__box-description {

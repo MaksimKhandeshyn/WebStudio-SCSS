@@ -16,9 +16,8 @@
   .product__projects-item {
     flex-basis: calc(100% / 3 - 30px);
     border: 1px solid #eee;
-    @extend %transtion;
-    position: relative;
     overflow: hidden;
+    @extend %transtion;
     .product__projects-title {
       font-size: 18px;
       line-height: 2;
@@ -38,10 +37,16 @@
         0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
       cursor: pointer;
     }
-    &:hover .product__box-description {
-      transform: translateY(-35%);
+    &:hover .product__box-hover .product__box-description {
+      transform: translateY(0%);
     }
   }
+}
+
+.product__box-hover {
+  height: 284px;
+  position: relative;
+  overflow: hidden;
 }
 
 .product__box-description {
