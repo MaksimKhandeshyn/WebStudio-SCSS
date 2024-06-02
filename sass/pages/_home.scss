@@ -20,17 +20,21 @@
   right: 0;
   bottom: 0;
   z-index: 1;
+  .modal {
+    @include pos(absolute, 50%, 50%, #fff);
+    width: 528px;
+    height: 581px;
+    transform: translate(-50%, -50%);
+  }
+  .modal-icon:hover {
+    fill: $accent-color;
+  }
 }
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
-.modal {
-  @include pos(absolute, 50%, 50%, #fff);
-  width: 528px;
-  height: 581px;
-  transform: translate(-50%, -50%);
-}
+
 .praise {
   @include paddings(94px, 94px);
   .strength__praise-list {

@@ -1,43 +1,53 @@
 .nav {
-  display: flex;
-  .nav-list {
-    @include display(flex, center);
-    justify-content: space-between;
-    position: relative;
-    .nav-item {
-      height: 17px;
-    } 
-    .nav-item + .nav-item {
-      margin-left: 50px;
+    display: flex;
+
+    .nav-list {
+        @include display(flex, center);
+        justify-content: space-between;
+        position: relative;
+
+        .nav-item {
+            height: 17px;
+        }
+
+        .nav-item+.nav-item {
+            margin-left: 50px;
+        }
+
+        .nav-item:first-child {
+            margin-left: 93px;
+        }
+
+        .nav-item:first-child::after {
+            content: "";
+            @extend %transtion;
+        }
+
+        .nav-item:nth-child(2)::after {
+            content: "";
+            @extend %transtion;
+        }
+
+        .nav-item:first-child:hover::after {
+            @extend %hover-header;
+            @include nav-item(48px, 4px, 91px);
+        }
+
+        .nav-item:nth-child(2):hover::after {
+            @extend %hover-header;
+            @include nav-item(78px, 4px, 186px);
+        }
     }
-    .nav-item:first-child {
-      margin-left: 93px;
+
+    .nav-link {
+        @include cl-txt($main-color, 14px, 0.28px);
+        font-weight: 500;
+
+        @extend %transtion;
+
+        &:focus,
+        &:hover {
+            color: $accent-color;
+        }
     }
-    .nav-item:first-child::after {
-      content: "";
-      @extend %transtion;
-    }
-    .nav-item:nth-child(2)::after {
-      content: "";
-      @extend %transtion;
-    }
-    .nav-item:first-child:hover::after {
-      @extend %hover-header;
-      @include nav-item (48px, 4px, 91px);
-    }
-    .nav-item:nth-child(2):hover::after {
-      @extend %hover-header;
-      @include nav-item (78px, 4px, 186px)
-    }
-  }
-  .nav-link {
-    @include cl-txt($main-color, 14px, 0.28px);
-    font-weight: 500;
-  
-    @extend %transtion;
-    &:focus,
-    &:hover {
-      color: $accent-color;
-    }
-  }
 }
