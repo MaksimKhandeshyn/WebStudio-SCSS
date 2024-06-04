@@ -1,20 +1,163 @@
 /*Hero section*/
-.hero {
-  width: 480px;
-  height: 400px;
-  @include paddings(118px, 200px);
-  background-image: url("../images/header-mobile.jpg"),
-    linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4));
-  background-repeat: no-repeat;
-  margin: 0 auto;
-  .main__hero-title {
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 162%;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    text-align: center;
-    color: #fff;
+@media screen and (min-width: 480px) {
+  .hero {
+    width: 480px;
+    height: 400px;
+    @include paddings(118px, 200px);
+    background-image: url("../images/header-mobile.jpg"),
+      linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4));
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    .main__hero-title {
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 162%;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-align: center;
+      color: #fff;
+    }
+  }
+  .praise {
+    @include paddings(60px, 60px);
+    .strength__praiser-item {
+      margin-left: 15px;
+      .strength__praiser-title {
+        @include cl-txt($main-color, 14px, 0.42px);
+        text-transform: uppercase;
+        margin-top: 30px;
+        text-align: center;
+      }
+      .strength__praiser-info {
+        @include cl-txt($add-color, 14px, 0.42px);
+        line-height: 1.71;
+        margin-top: 10px;
+      }
+    }
+    .strength__praiser-item:not(:first-child) {
+      margin-top: 30px;
+    }
+  }
+  .what-we-doing {
+    display: none;
+  }
+  .team {
+    @include paddings(60px, 60px);
+    background-color: #f5f4fa;
+    .staff__team-title {
+      font-size: 28px;
+      letter-spacing: 0.03em;
+      text-align: center;
+      color: $main-color;
+      margin-bottom: 30px;
+    }
+    .staff__team-item {
+      width: 450px;
+      height: 622px;
+      background-color: #fff;
+      margin-bottom: 94px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+      .employee {
+        height: 460px;
+      }
+      .staff__name {
+        font-weight: 500;
+        @include cl-txt($main-color, 16px, 0.03em);
+        text-align: center;
+        margin-top: 30px;
+      }
+      .staff__position {
+        @include cl-txt($add-color, 16px, 0.03em);
+        text-align: center;
+        margin-top: 10px;
+      }
+      .staff__social-media-list {
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+        padding-bottom: 24px;
+        .staff__social-media-item {
+          margin-right: 22px;
+          .staff__social-media-link {
+            @include display(flex, center);
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            justify-content: center;
+            transition-property: background-color, border-radius, fill;
+            transition: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 250ms;
+            &:hover {
+              background-color: $accent-color;
+              border-radius: 50%;
+            }
+            &:hover .social-media {
+              fill: #fff;
+            }
+          }
+          .social-media {
+            fill: #afb1b8;
+          }
+        }
+        .facebook {
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+
+//tablet
+@media screen and (min-width: 768px) {
+  .hero {
+    @include paddings(118px, 118px);
+    width: 768px;
+    height: 400px;
+    background: url("../images/bg-tablet.jpg"),
+      linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4)),
+      no-repeat;
+    .container-mb {
+      width: 770px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    .main__hero-title {
+      width: 360px;
+      margin: 0 auto;
+    }
+  }
+  .praise {
+    @include paddings(60px, 60px);
+    .container-mb {
+      width: 770px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    .strength__praise-list {
+      display: flex;
+      flex-wrap: wrap;
+      .strength__praiser-item {
+        flex-basis: calc(100% / 2 - 30px);
+        margin-top: 0;
+        .strength__icon-container {
+          width: 354px;
+          height: 120px;
+          padding: 25px 142px;
+        }
+        .strength__praiser-title {
+          text-align: start;
+        }
+        .strength__praiser-info {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+  .what-we-doing {
+    display: none;
   }
 }
 //desktop
@@ -40,27 +183,144 @@
       margin: 0 auto;
     }
   }
-}
-//tablet
-@media screen and (min-width: 768px) {
-  .hero {
-    @include paddings(118px, 118px);
-    width: 768px;
-    height: 400px;
-    background: url("../images/bg-tablet.jpg"),
-      linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4)),
-      no-repeat;
+  .praise {
     .container-mb {
-      width: 770px;
+      width: 1200px;
       margin: 0 auto;
       padding: 0 15px;
     }
-    .main__hero-title {
-      width: 360px;
+    @include paddings(94px, 94px);
+    .strength__praise-list {
+      display: flex;
+      flex-wrap: nowrap;
+
+      .strength__praiser-item {
+        margin-right: 30px;
+        .strength__icon-container {
+          width: 270px;
+          height: 120px;
+          padding: 25px 100px;
+        }
+      }
+      .strength__praiser-title {
+        @include cl-txt($main-color, 14px, 0.42px);
+        text-transform: uppercase;
+        margin-top: 30px;
+      }
+      .strength__praiser-info {
+        @include cl-txt($add-color, 14px, 0.42px);
+        line-height: 1.71;
+        padding-top: 10px;
+      }
+    }
+  }
+  .what-we-doing {
+    display: block;
+    .container-mb {
+      width: 1200px;
       margin: 0 auto;
+      padding: 0 15px;
+    }
+    @include paddings(94px, 94px);
+    .job__what-we-doing-title {
+      @include cl-txt($main-color, 36px, 1.08px);
+      text-align: center;
+      padding-bottom: 50px;
+    }
+
+    .job__what-we-doing-list {
+      display: flex;
+      gap: 30px;
+      .job__what-we-are-doing-item {
+        flex-basis: 370px;
+        position: relative;
+      }
+    }
+    .job__name-photo {
+      @include pos(absolute, 0, 76.7%, rgba(47, 48, 58, 0.8));
+      @include cl-txt(#fff, 14px, 0.03em);
+      @include display(flex, center);
+      @include wh(370px, 70px);
+      right: 0;
+      justify-content: center;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+  .team {
+    .container-mb {
+      width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    padding-top: 94px;
+    background-color: #f5f4fa;
+    .staff__team-title {
+      @include cl-txt($main-color, 36px, 1.08px);
+      text-align: center;
+      padding-bottom: 50px;
+    }
+    .staff__team-list {
+      display: flex;
+      gap: 30px;
+    }
+    .staff__team-item {
+      flex-basis: calc(100% / 1 - 30px);
+      box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+      background-color: #fff;
+      margin-bottom: 94px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      width: 270px;
+      height: 428px;
+      .employee {
+        height: auto
+      }
+      .staff__name {
+        @include cl-txt($main-color, 16px, 0.48px);
+        text-align: center;
+        padding-top: 30px;
+        
+      }
+      .staff__position {
+        color: $add-color;
+        text-align: center;
+        letter-spacing: 0.48px;
+        padding-top: 10px;
+        
+      }
+    }
+    .staff__social-media-list {
+      display: flex;
+      justify-content: center;
+      .staff__social-media-item {
+        margin-right: 10px;
+      }
+      .staff__social-media-link {
+        @include display(flex, center);
+        width: 44px;
+        height: 44px;
+        justify-content: center;
+
+        transition-property: background-color, border-radius, fill;
+        transition: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+        &:hover {
+          background-color: $accent-color;
+          border-radius: 50%;
+        }
+        &:hover .social-media {
+          fill: #fff;
+        }
+      }
+      .social-media {
+        fill: #afb1b8;
+      }
     }
   }
 }
+
 .backdrop {
   @include pos(fixed, 0, 0, #2f303a66);
   right: 0;
@@ -79,119 +339,6 @@
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-}
-
-.praise {
-  @include paddings(94px, 94px);
-  .strength__praise-list {
-    display: flex;
-    .strength__praiser-item {
-      margin-right: 30px;
-    }
-    .strength__praiser-title {
-      @include cl-txt($main-color, 14px, 0.42px);
-      text-transform: uppercase;
-      margin-top: 30px;
-    }
-    .strength__praiser-info {
-      @include cl-txt($add-color, 14px, 0.42px);
-      line-height: 1.71;
-      padding-top: 10px;
-    }
-  }
-}
-
-.what-we-doing {
-  @include paddings(94px, 94px);
-  .job__what-we-doing-title {
-    @include cl-txt($main-color, 36px, 1.08px);
-    text-align: center;
-    padding-bottom: 50px;
-  }
-
-  .job__what-we-doing-list {
-    display: flex;
-    gap: 30px;
-    .job__what-we-are-doing-item {
-      flex-basis: 370px;
-      position: relative;
-    }
-  }
-  .job__name-photo {
-    @include pos(absolute, 0, 76.7%, rgba(47, 48, 58, 0.8));
-    @include cl-txt(#fff, 14px, 0.03em);
-    @include display(flex, center);
-    @include wh(360px, 70px);
-    right: 0;
-    justify-content: center;
-    text-transform: uppercase;
-    text-align: center;
-  }
-}
-.team {
-  padding-top: 94px;
-  background-color: #f5f4fa;
-  .staff__team-title {
-    @include cl-txt($main-color, 36px, 1.08px);
-    text-align: center;
-    padding-bottom: 50px;
-  }
-  .staff__team-list {
-    display: flex;
-    gap: 30px;
-  }
-  .staff__team-item {
-    flex-basis: calc(100% / 1 - 30px);
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    background-color: #fff;
-    margin-bottom: 94px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    width: 270px;
-    height: 428px;
-
-    .staff__name {
-      @include cl-txt($main-color, 16px, 0.48px);
-      text-align: center;
-      padding-top: 30px;
-    }
-    .staff__position {
-      color: $add-color;
-      text-align: center;
-      letter-spacing: 0.48px;
-      padding-top: 10px;
-      margin-bottom: 30px;
-    }
-  }
-  .staff__social-media-list {
-    display: flex;
-    justify-content: center;
-    .staff__social-media-item {
-      margin-right: 10px;
-    }
-    .staff__social-media-container {
-      display: flex;
-    }
-    .staff__social-media-link {
-      @include display(flex, center);
-      width: 44px;
-      height: 44px;
-      justify-content: center;
-
-      @extend %transtion;
-      &:hover {
-        background-color: $accent-color;
-        border-radius: 50%;
-      }
-      &:hover .social-media {
-        fill: #fff;
-      }
-    }
-    .social-media {
-      fill: #afb1b8;
-    }
-  }
 }
 .clients {
   @include paddings(94px, 94px);
