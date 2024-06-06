@@ -1,4 +1,4 @@
-.footer .social-media-footer .sm-item, .modal-form .form-comment, .modal-form .modal-item .form-input, .contact-list .contact-link, .nav .nav-link, .nav .nav-list .nav-item:nth-child(2)::after, .nav .nav-list .nav-item:first-child::after, .product__box-description, .product__projects-list .product__projects-item, .product__filter-btn, .send-btn {
+.modal-form .form-comment, .modal-form .modal-item .form-input, .contact-list .contact-link, .nav .nav-link, .nav .nav-list .nav-item:nth-child(2)::after, .nav .nav-list .nav-item:first-child::after, .product__box-description, .product__projects-list .product__projects-item, .product__filter-btn, .send-btn {
   transition: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: box-shadow, background, color, fill, background-color, border-radius, border, content, width, height, position, top, left, cursor, overflow, transform, border-style, padding;
   transition-duration: 250ms;
@@ -156,19 +156,21 @@ img {
   background: #188ce8;
 }
 
-.rossete-btn {
-  border: none;
-  border-radius: 4px;
-  width: 200px;
-  height: 50px;
-  background: #2196f3;
-  line-height: 187%;
-  letter-spacing: 0.06em;
-  color: #fff;
-  margin-left: 12px;
-  padding-right: 28px;
+@media screen and (min-width: 480px) {
+  .rossete-btn {
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    background: #2196f3;
+    line-height: 187%;
+    letter-spacing: 0.06em;
+    color: #fff;
+    margin-left: 140px;
+    padding-right: 28px;
+    margin-top: 20px;
+  }
 }
-
 .product__filter-btn {
   font-weight: 500;
   line-height: 1.62;
@@ -186,7 +188,6 @@ img {
   cursor: pointer;
 }
 
-/*Hero section*/
 @media screen and (min-width: 480px) {
   .hero {
     width: 480px;
@@ -827,108 +828,96 @@ img {
   color: #2196f3;
 }
 
-.rossete-form {
-  margin-top: 20px;
+@media screen and (min-width: 480px) {
+  .rossete-form {
+    width: 450px;
+    margin: 0 auto;
+  }
+  .rossete-input {
+    margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    width: 450px;
+    height: 50px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: transparent;
+    padding-left: 16px;
+    margin-top: 20px;
+  }
 }
-.rossete-form .rossete-input {
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  width: 358px;
-  height: 50px;
-  background-color: transparent;
-  padding-left: 16px;
-}
-
-.footer {
-  display: flex;
-  background-color: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-.footer .footer-social-media {
-  display: flex;
-}
-.footer .logo {
-  font-family: Raleway;
-  color: #000;
-  font-size: 26px;
-  letter-spacing: 0.78px;
-}
-.footer .first-part-logo {
-  color: #2196f3;
-  font-weight: 700;
-  letter-spacing: 0.78px;
-}
-.footer .logo-footer {
-  color: #fff;
-}
-.footer .logo-footer:visited {
-  color: #fff;
-}
-.footer .address {
-  padding-top: 20px;
-  display: flex;
-  flex-direction: column;
-}
-.footer .address .footer-contact {
-  color: #757575;
-  font-size: 14px;
-  letter-spacing: 0.42px;
-  font-style: normal;
-  line-height: 1.71;
-  text-decoration: none;
-}
-.footer .address .footer-contact:first-child {
-  color: #fff;
-}
-.footer .social-media-footer {
-  margin-left: 10px;
-}
-.footer .social-media-footer .sm-title {
-  color: #fff;
-  font-size: 14px;
-  letter-spacing: 0.03px;
-  text-transform: uppercase;
-  text-align: center;
-}
-.footer .social-media-footer .sm-list {
-  display: flex;
-  margin-top: 20px;
-  justify-content: center;
-  margin-left: 70px;
-}
-.footer .social-media-footer .sm-item {
-  margin-right: 10px;
-}
-.footer .social-media-footer .sm-item:hover {
-  background-color: #2196f3;
-  border-radius: 50%;
-}
-.footer .social-media-footer .sm-link {
-  display: flex;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  justify-content: center;
-  background: rgba(255, 255, 255, 0.1);
-}
-.footer .social-media-footer .sm-icon {
-  fill: #fff;
-}
-.footer .rosette {
-  margin-left: 93px;
-}
-.footer .rosette .rosette-title {
-  color: #fff;
-  font-size: 14px;
-  letter-spacing: 0.03px;
-  text-transform: uppercase;
-  padding-right: 62px;
-}
-.footer .rosette .rosette-icon {
-  position: relative;
-  left: 537px;
-  bottom: 38px;
+@media screen and (min-width: 480px) {
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2f303a;
+  }
+  .footer .logo {
+    font-family: Raleway;
+    color: #fff;
+    font-size: 26px;
+    letter-spacing: 0.78px;
+    display: flex;
+    justify-content: center;
+  }
+  .footer .first-part-logo {
+    color: #2196f3;
+  }
+  .footer .address {
+    margin: 0 auto;
+    text-align: center;
+    width: 232px;
+    height: 79px;
+    margin-top: 20px;
+  }
+  .footer .address .footer-contact {
+    font-style: normal;
+    color: #757575;
+    font-size: 14px;
+    letter-spacing: 0.42px;
+  }
+  .footer .address .footer-contact:first-child {
+    line-height: 1.71;
+    color: #fff;
+  }
+  .footer .sm-title {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+  }
+  .footer .sm-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+  .footer .sm-list .sm-item {
+    margin-right: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  .footer .sm-list .sm-item .sm-icon {
+    fill: #fff;
+  }
+  .footer .rosette {
+    position: relative;
+  }
+  .footer .rosette-title {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+  }
+  .footer .rosette-icon {
+    position: absolute;
+    top: 118px;
+    left: 295px;
+  }
 }/*# sourceMappingURL=main.css.map */

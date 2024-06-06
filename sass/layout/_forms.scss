@@ -19,7 +19,7 @@
       @include located-ob(absolute, 248px, 52px);
     }
     .form-label {
-      @include cl-txt ($add-color, 12px, 0.01em);
+      @include cl-txt($add-color, 12px, 0.01em);
     }
     .form-input {
       @extend %input-form;
@@ -32,7 +32,7 @@
   .form-comment {
     @extend %input-form;
     @extend %transtion;
-    @include cl-txt (rgba(117, 117, 117, 0.5), 12px, 0.01em);
+    @include cl-txt(rgba(117, 117, 117, 0.5), 12px, 0.01em);
     padding-left: 16px;
     padding-top: 12px;
     height: 138px;
@@ -54,13 +54,31 @@
     color: $accent-color;
   }
 }
-.rossete-form {
-  margin-top: 20px;
+@media screen and (min-width: 480px) {
+  .rossete-form {
+    width: 450px;
+    margin: 0 auto;
+  }
   .rossete-input {
-    color: #fff;
-    @include border(1px solid rgba(255, 255, 255, 0.3), 4px);
-    @include wh (358px, 50px);
-    background-color: transparent;
+    margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    width: 450px;
+    height: 50px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: transparent;
     padding-left: 16px;
+    margin-top: 20px;
+    
   }
 }
+// .rossete-form {
+//   margin-top: 20px;
+//   .rossete-input {
+//     color: #fff;
+//     @include border(1px solid rgba(255, 255, 255, 0.3), 4px);
+//     @include wh (358px, 50px);
+//     background-color: transparent;
+//     padding-left: 16px;
+//   }
+// }

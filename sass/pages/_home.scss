@@ -1,4 +1,3 @@
-/*Hero section*/
 @media screen and (min-width: 480px) {
   .hero {
     width: 480px;
@@ -151,7 +150,6 @@
     }
   }
 }
-//tablet
 @media screen and (min-width: 768px) {
   .hero {
     @include paddings(118px, 118px);
@@ -218,7 +216,6 @@
     }
   }
 }
-//desktop
 @media screen and (min-width: 1200px) {
   .hero {
     @include paddings(200px, 200px);

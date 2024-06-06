@@ -22,15 +22,19 @@
     background: #188ce8;
   }
 }
-.rossete-btn {
-  @include border(none, 4px);
-  @include wh(200px, 50px);
-  background: $accent-color;
-  line-height: 187%;
-  letter-spacing: 0.06em;
-  color: #fff;
-  margin-left: 12px;
-  padding-right: 28px;
+@media screen and (min-width: 480px) {
+  .rossete-btn {
+    @include border(none, 4px);
+    @include wh(200px, 50px);
+    background: $accent-color;
+    line-height: 187%;
+    letter-spacing: 0.06em;
+    color: #fff;
+    margin-left: 140px;
+    padding-right: 28px;
+    margin-top: 20px;
+    
+  }
 }
 .product__filter-btn {
   font-weight: 500;
