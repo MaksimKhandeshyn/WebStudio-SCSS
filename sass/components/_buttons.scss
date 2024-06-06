@@ -6,7 +6,7 @@
 }
 .modal-btn {
   @include wh(30px, 30px);
-  @include display (flex, center);
+  @include display(flex, center);
   @include border(1px solid rgba(0, 0, 0, 0.1), 100px);
   position: relative;
   left: 490px;
@@ -31,9 +31,19 @@
     letter-spacing: 0.06em;
     color: #fff;
     margin-left: 140px;
-    padding-right: 28px;
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .rosette-icon {
+      margin-left: 12px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .rossete-btn {
     
+    margin-left: 12px;
   }
 }
 .product__filter-btn {

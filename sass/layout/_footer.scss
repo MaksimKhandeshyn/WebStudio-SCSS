@@ -52,9 +52,7 @@
         }
       }
     }
-    .rosette {
-      position: relative;
-    }
+
     .rosette-title {
       font-size: 14px;
       letter-spacing: 0.03em;
@@ -62,94 +60,98 @@
       text-align: center;
       color: #fff;
     }
-    .rosette-icon {
-      position: absolute;
-      top: 118px;
-      left: 295px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-social-media {
+    display: flex;
+    .footer-info {
+      margin-right: 165px;
     }
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer {
+    .footer-container {
+      position: relative;
+    }
+    display: flex;
+    background-color: $bg-color;
+    @include paddings(60px, 60px);
+    .footer-social-media {
+      display: flex;
+      .footer-info {
+        margin-right: 0;
+      }
+    }
+    .logo {
+      font-family: Raleway;
+      @include cl-txt(#fff, 26px, 0.78px);
+      display: block;
+    }
+    .first-part-logo {
+      color: $accent-color;
+    }
+    .address {
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      .footer-contact {
+        @include cl-txt($add-color, 14px, 0.42px);
+        font-style: normal;
+        line-height: 1.71;
+        text-decoration: none;
+        &:first-child {
+          color: #fff;
+        }
+        &:last-child {
+          margin-top: -18px;
+        }
+      }
+    }
+    .social-media-footer {
+      margin-left: 70px;
+      .sm-title {
+        @include cl-txt(#fff, 14px, 0.03px);
+        text-transform: uppercase;
+        text-align: center;
+      }
+      .sm-list {
+        display: flex;
+        margin-top: 20px;
+        justify-content: center;
+        margin-left: 70px;
+        .sm-link {
+          @include display(flex, center);
+          @include wh(44px, 44px);
+          justify-content: center;
 
-// .footer {
-//   display: flex;
-//   background-color: $bg-color;
-//   @include paddings(60px, 60px);
-//   .footer-social-media {
-//     display: flex;
-//   }
-//   .logo {
-//     font-family: Raleway;
-//     @include cl-txt(#000, 26px, 0.78px);
-//   }
-//   .first-part-logo {
-//     color: $accent-color;
-//     font-weight: 700;
-//     letter-spacing: 0.78px;
-//   }
-//   .logo-footer {
-//     color: #fff;
-//   }
-//   .logo-footer:visited {
-//     color: #fff;
-//   }
-//   .address {
-//     padding-top: 20px;
-//     display: flex;
-//     flex-direction: column;
-//     .footer-contact {
-//       @include cl-txt($add-color, 14px, 0.42px);
-//       font-style: normal;
-//       line-height: 1.71;
-//       text-decoration: none;
-//     }
-//     .footer-contact:first-child {
-//       color: #fff;
-//     }
-//   }
-//   .social-media-footer {
-//     margin-left: 10px;
-//     .sm-title {
-//       @include cl-txt(#fff, 14px, 0.03px);
-//       text-transform: uppercase;
-//       text-align: center;
-//     }
-//     .sm-list {
-//       display: flex;
-//       margin-top: 20px;
-//       justify-content: center;
-//       margin-left: 70px;
-//     }
-//     .sm-item {
-//       margin-right: 10px;
-
-//       @extend %transtion;
-//       &:hover {
-//         background-color: $accent-color;
-//         border-radius: 50%;
-//       }
-//     }
-//     .sm-link {
-//       @include display(flex, center);
-//       @include wh(44px, 44px);
-//       border-radius: 50%;
-//       justify-content: center;
-//       background: rgba(255, 255, 255, 0.1);
-//     }
-//     .sm-icon {
-//       fill: #fff;
-//     }
-//   }
-//   .rosette {
-//     margin-left: 93px;
-//     .rosette-title {
-//       @include cl-txt(#fff, 14px, 0.03px);
-//       text-transform: uppercase;
-//       padding-right: 62px;
-//     }
-//     .rosette-icon {
-//       position: relative;
-//       left: 537px;
-//       bottom: 38px;
-//     }
-//   }
-// }
+          transition-property: background-color, border-radius, cursor, fill;
+          transition-duration: 250ms;
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          &:hover {
+            background-color: $accent-color;
+            border-radius: 50%;
+            cursor: pointer;
+          }
+          &:hover .sm-icon {
+            fill: #fff;
+          }
+        }
+      }
+    }
+    .rosette {
+      position: absolute;
+      top: 0;
+      left: 604px;
+      margin-left: 93px;
+      margin-top: 0;
+      .rosette-title {
+        @include cl-txt(#fff, 14px, 0.03px);
+        text-transform: uppercase;
+        padding-right: 62px;
+        display: flex;
+      }
+    }
+  }
+}
