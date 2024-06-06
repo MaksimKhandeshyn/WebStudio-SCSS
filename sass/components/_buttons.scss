@@ -42,23 +42,28 @@
 }
 @media screen and (min-width: 1200px) {
   .rossete-btn {
-    
     margin-left: 12px;
   }
 }
 .product__filter-btn {
+  border-radius: 4px;
+  
   font-weight: 500;
   line-height: 1.62;
   letter-spacing: 0.48px;
   border: none;
   background-color: #f5f4fa;
   padding: 6px 25px;
-  @extend %transtion;
+  transition-property: border, border-radius, padding, background, color, cursor, box-shadow,;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
     @include border(none, 4px);
     padding: 6px 25px;
     background: $accent-color;
     color: #fff;
     cursor: pointer;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
+      0 3px 1px 0 rgba(0, 0, 0, 0.1);
   }
 }
