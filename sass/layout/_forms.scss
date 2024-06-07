@@ -1,59 +1,139 @@
-.modal-title {
-  @include cl-txt($main-color, 20px, 0.03px);
-  text-align: center;
-}
-.modal-form {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 12px;
-  .modal-item {
-    margin-top: 10px;
-    margin-left: 40px;
-    .name-icon {
-      @include located-ob(absolute, 112px, 52px);
-    }
-    .tel-icon {
-      @include located-ob(absolute, 180px, 52px);
-    }
-    .mail-icon {
-      @include located-ob(absolute, 248px, 52px);
-    }
-    .form-label {
-      @include cl-txt($add-color, 12px, 0.01em);
-    }
-    .form-input {
-      @extend %input-form;
-      @extend %transtion;
-      &:focus {
-        @extend %focus-form;
+@media screen and (min-width: 480px) {
+  .modal-form {
+    width: 370px;
+    height: 342px;
+    margin: 0 auto;
+    .modal-item {
+      position: relative;
+      .name-icon {
+        @include located-ob(absolute, 30px, 12px);
+      }
+      .tel-icon {
+        @include located-ob(absolute, 30px, 12px);
+      }
+      .mail-icon {
+        @include located-ob(absolute, 30px, 12px);
+      }
+      .form-label {
+        font-size: 12px;
+        letter-spacing: 0.01em;
+        color: $add-color;
+      }
+      .form-input,
+      .form-comment {
+        resize: none;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        width: 370px;
+        height: 40px;
+        margin-bottom: 10px;
+        padding-left: 42px;
+        outline: none;
+        transition-property: border-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:focus,
+        &:focus {
+          border-color: $accent-color;
+        }
+      }
+
+      .form-comment {
+        font-size: 14px;
+        letter-spacing: 0.01em;
+        padding-top: 12px;
+        padding-left: 16px;
+        color: rgba(117, 117, 117, 0.5);
+        height: 120px;
+      }
+      .rules {
+        display: flex;
+        .rules-text {
+          font-size: 12px;
+          letter-spacing: 0.03em;
+          color: $add-color;
+          margin-left: 8px;
+          .rules-link {
+            text-decoration: underline;
+            text-decoration-skip-ink: none;
+            color: $accent-color;
+          }
+        }
       }
     }
   }
-  .form-comment {
-    @extend %input-form;
-    @extend %transtion;
-    @include cl-txt(rgba(117, 117, 117, 0.5), 12px, 0.01em);
-    padding-left: 16px;
-    padding-top: 12px;
-    height: 138px;
-    resize: none;
-    &:focus {
-      @extend %focus-form;
-      color: black;
+}
+@media screen  and (min-width: 1200px) {
+  .modal-form {
+    margin-left: 0;
+    padding-left: 40px;
+    .modal-item {
+      .form-input, .form-comment {
+        width: 448px;
+        margin-top: 4px;
+      }
+      .rules {
+        width: 400px;
+      }
     }
   }
 }
-.rules {
-  display: flex;
-  .rules-text {
-    @include cl-txt($add-color, 14px, 0.03px);
-    line-height: 171%;
-    margin-left: 8px;
-  }
-  .rules-link {
-    color: $accent-color;
-  }
-}
+// .modal-title {
+//   @include cl-txt($main-color, 20px, 0.03px);
+//   text-align: center;
+// }
+// .modal-form {
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin-top: 12px;
+//   .modal-item {
+//     margin-top: 10px;
+//     margin-left: 40px;
+//     .name-icon {
+//       @include located-ob(absolute, 112px, 52px);
+//     }
+//     .tel-icon {
+//       @include located-ob(absolute, 180px, 52px);
+//     }
+//     .mail-icon {
+//       @include located-ob(absolute, 248px, 52px);
+//     }
+//     .form-label {
+//       @include cl-txt($add-color, 12px, 0.01em);
+//     }
+//     .form-input {
+//       @extend %input-form;
+//       @extend %transtion;
+//       &:focus {
+//         @extend %focus-form;
+//       }
+//     }
+//   }
+//   .form-comment {
+//     @extend %input-form;
+//     @extend %transtion;
+//     @include cl-txt(rgba(117, 117, 117, 0.5), 12px, 0.01em);
+//     padding-left: 16px;
+//     padding-top: 12px;
+//     height: 138px;
+//     resize: none;
+//     &:focus {
+//       @extend %focus-form;
+//       color: black;
+//     }
+//   }
+// }
+// .rules {
+//   display: flex;
+//   .rules-text {
+//     @include cl-txt($add-color, 14px, 0.03px);
+//     line-height: 171%;
+//     margin-left: 8px;
+//   }
+//   .rules-link {
+//     color: $accent-color;
+//   }
+// }
 @media screen and (min-width: 480px) {
   .rossete-form {
     width: 450px;
@@ -69,7 +149,6 @@
     background: transparent;
     padding-left: 16px;
     margin-top: 20px;
-    
   }
 }
 @media screen and (min-width: 768px) {
@@ -78,7 +157,7 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .rossete-form{
+  .rossete-form {
     width: 570px;
     display: flex;
   }

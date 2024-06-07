@@ -149,6 +149,36 @@
       }
     }
   }
+  .backdrop {
+    @include pos(fixed, 0, 0, #2f303a66);
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+      0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    .modal {
+      border-radius: 4px;
+      @include paddings(40px, 40px);
+      @include pos(absolute, 50%, 50%, #fff);
+      width: 450px;
+      height: 609px;
+      transform: translate(-50%, -50%);
+      .modal-title {
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: $main-color;
+        width: 370px;
+        margin: 0 auto;
+        margin-bottom: 12px;
+      }
+    }
+  }
+  .backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 @media screen and (min-width: 768px) {
   .hero {
@@ -371,24 +401,30 @@
       @include wh(106px, 60px);
     }
   }
+  .backdrop {
+    .modal {
+      width: 528px;
+      height: 581px;
+      .modal-title {
+        width: 448px;
+      }
+    }
+
+  }
 }
 
-.backdrop {
-  @include pos(fixed, 0, 0, #2f303a66);
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-  .modal {
-    @include pos(absolute, 50%, 50%, #fff);
-    width: 528px;
-    height: 581px;
-    transform: translate(-50%, -50%);
-  }
-  .modal-icon:hover {
-    fill: $accent-color;
-  }
-}
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
+// .backdrop {
+//   @include pos(fixed, 0, 0, #2f303a66);
+//   right: 0;
+//   bottom: 0;
+//   z-index: 1;
+//   .modal {
+//     @include pos(absolute, 50%, 50%, #fff);
+//     width: 528px;
+//     height: 581px;
+//     transform: translate(-50%, -50%);
+//   }
+//   .modal-icon:hover {
+//     fill: $accent-color;
+//   }
+// }
