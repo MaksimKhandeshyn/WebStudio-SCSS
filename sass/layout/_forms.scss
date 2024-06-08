@@ -62,79 +62,6 @@
       }
     }
   }
-}
-@media screen  and (min-width: 1200px) {
-  .modal-form {
-    margin-left: 0;
-    padding-left: 40px;
-    .modal-item {
-      .form-input, .form-comment {
-        width: 448px;
-        margin-top: 4px;
-      }
-      .rules {
-        width: 400px;
-      }
-    }
-  }
-}
-// .modal-title {
-//   @include cl-txt($main-color, 20px, 0.03px);
-//   text-align: center;
-// }
-// .modal-form {
-//   display: flex;
-//   flex-wrap: wrap;
-//   margin-top: 12px;
-//   .modal-item {
-//     margin-top: 10px;
-//     margin-left: 40px;
-//     .name-icon {
-//       @include located-ob(absolute, 112px, 52px);
-//     }
-//     .tel-icon {
-//       @include located-ob(absolute, 180px, 52px);
-//     }
-//     .mail-icon {
-//       @include located-ob(absolute, 248px, 52px);
-//     }
-//     .form-label {
-//       @include cl-txt($add-color, 12px, 0.01em);
-//     }
-//     .form-input {
-//       @extend %input-form;
-//       @extend %transtion;
-//       &:focus {
-//         @extend %focus-form;
-//       }
-//     }
-//   }
-//   .form-comment {
-//     @extend %input-form;
-//     @extend %transtion;
-//     @include cl-txt(rgba(117, 117, 117, 0.5), 12px, 0.01em);
-//     padding-left: 16px;
-//     padding-top: 12px;
-//     height: 138px;
-//     resize: none;
-//     &:focus {
-//       @extend %focus-form;
-//       color: black;
-//     }
-//   }
-// }
-// .rules {
-//   display: flex;
-//   .rules-text {
-//     @include cl-txt($add-color, 14px, 0.03px);
-//     line-height: 171%;
-//     margin-left: 8px;
-//   }
-//   .rules-link {
-//     color: $accent-color;
-//   }
-// }
-@media screen and (min-width: 480px) {
   .rossete-form {
     width: 450px;
     margin: 0 auto;
@@ -151,12 +78,20 @@
     margin-top: 20px;
   }
 }
-@media screen and (min-width: 768px) {
-  .rosette {
-    margin-top: 60px;
+@media screen  and (min-width: 1200px) {
+  .modal-form {
+    margin-left: 0;
+    padding-left: 40px;
+    .modal-item {
+      .form-input, .form-comment {
+        width: 448px;
+        margin-top: 4px;
+      }
+      .rules {
+        width: 400px;
+      }
+    }
   }
-}
-@media screen and (min-width: 1200px) {
   .rossete-form {
     width: 570px;
     display: flex;
@@ -166,13 +101,9 @@
     height: 50px;
   }
 }
-// .rossete-form {
-//   margin-top: 20px;
-//   .rossete-input {
-//     color: #fff;
-//     @include border(1px solid rgba(255, 255, 255, 0.3), 4px);
-//     @include wh (358px, 50px);
-//     background-color: transparent;
-//     padding-left: 16px;
-//   }
-// }
+@media screen and (min-width: 768px) {
+  .rosette {
+    margin-top: 60px;
+  }
+}
+

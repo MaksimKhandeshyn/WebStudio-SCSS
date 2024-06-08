@@ -259,8 +259,6 @@
       line-height: 1.36;
       width: 696px;
       height: 120px;
-      text-align: center;
-      margin: 0 auto;
     }
   }
   .praise {
@@ -268,7 +266,6 @@
     .strength__praise-list {
       display: flex;
       flex-wrap: nowrap;
-
       .strength__praiser-item {
         margin-right: 30px;
         .strength__icon-container {
@@ -276,16 +273,6 @@
           height: 120px;
           padding: 25px 100px;
         }
-      }
-      .strength__praiser-title {
-        @include cl-txt($main-color, 14px, 0.42px);
-        text-transform: uppercase;
-        margin-top: 30px;
-      }
-      .strength__praiser-info {
-        @include cl-txt($add-color, 14px, 0.42px);
-        line-height: 1.71;
-        padding-top: 10px;
       }
     }
   }
@@ -326,64 +313,18 @@
     padding-top: 94px;
     background-color: #f5f4fa;
     .staff__team-title {
-      @include cl-txt($main-color, 36px, 1.08px);
-      text-align: center;
+      font-size: 36px;
       padding-bottom: 50px;
     }
     .staff__team-list {
-      display: flex;
       gap: 30px;
       flex-wrap: nowrap;
-    }
-    .staff__team-item {
-      flex-basis: calc(100% / 1 - 30px);
-      box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-      background-color: #fff;
-      margin-bottom: 94px;
-      border-bottom-left-radius: 8px;
-      border-bottom-right-radius: 8px;
-      width: 270px;
-      height: 428px;
-      .employee {
-        height: 260px;
-        width: 250px;
-      }
-      .staff__name {
-        @include cl-txt($main-color, 16px, 0.48px);
-        text-align: center;
-      }
-      .staff__position {
-        color: $add-color;
-        text-align: center;
-        letter-spacing: 0.48px;
-      }
     }
     .staff__social-media-list {
       display: flex;
       justify-content: center;
       .staff__social-media-item {
         margin-right: 10px;
-      }
-      .staff__social-media-link {
-        @include display(flex, center);
-        width: 44px;
-        height: 44px;
-        justify-content: center;
-
-        transition-property: background-color, border-radius, fill;
-        transition: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 250ms;
-        &:hover {
-          background-color: $accent-color;
-          border-radius: 50%;
-        }
-        &:hover .social-media {
-          fill: #fff;
-        }
-      }
-      .social-media {
-        fill: #afb1b8;
       }
     }
   }
@@ -412,19 +353,3 @@
 
   }
 }
-
-// .backdrop {
-//   @include pos(fixed, 0, 0, #2f303a66);
-//   right: 0;
-//   bottom: 0;
-//   z-index: 1;
-//   .modal {
-//     @include pos(absolute, 50%, 50%, #fff);
-//     width: 528px;
-//     height: 581px;
-//     transform: translate(-50%, -50%);
-//   }
-//   .modal-icon:hover {
-//     fill: $accent-color;
-//   }
-// }

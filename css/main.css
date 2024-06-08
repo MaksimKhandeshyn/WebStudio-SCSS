@@ -485,8 +485,6 @@ img {
     line-height: 1.36;
     width: 696px;
     height: 120px;
-    text-align: center;
-    margin: 0 auto;
   }
   .praise {
     padding-top: 94px;
@@ -503,20 +501,6 @@ img {
     width: 270px;
     height: 120px;
     padding: 25px 100px;
-  }
-  .praise .strength__praise-list .strength__praiser-title {
-    color: #212121;
-    font-size: 14px;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-    margin-top: 30px;
-  }
-  .praise .strength__praise-list .strength__praiser-info {
-    color: #757575;
-    font-size: 14px;
-    letter-spacing: 0.42px;
-    line-height: 1.71;
-    padding-top: 10px;
   }
   .what-we-doing {
     display: block;
@@ -565,41 +549,12 @@ img {
     background-color: #f5f4fa;
   }
   .team .staff__team-title {
-    color: #212121;
     font-size: 36px;
-    letter-spacing: 1.08px;
-    text-align: center;
     padding-bottom: 50px;
   }
   .team .staff__team-list {
-    display: flex;
     gap: 30px;
     flex-wrap: nowrap;
-  }
-  .team .staff__team-item {
-    flex-basis: calc(100% - 30px);
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    background-color: #fff;
-    margin-bottom: 94px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    width: 270px;
-    height: 428px;
-  }
-  .team .staff__team-item .employee {
-    height: 260px;
-    width: 250px;
-  }
-  .team .staff__team-item .staff__name {
-    color: #212121;
-    font-size: 16px;
-    letter-spacing: 0.48px;
-    text-align: center;
-  }
-  .team .staff__team-item .staff__position {
-    color: #757575;
-    text-align: center;
-    letter-spacing: 0.48px;
   }
   .team .staff__social-media-list {
     display: flex;
@@ -607,26 +562,6 @@ img {
   }
   .team .staff__social-media-list .staff__social-media-item {
     margin-right: 10px;
-  }
-  .team .staff__social-media-list .staff__social-media-link {
-    display: flex;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    justify-content: center;
-    transition-property: background-color, border-radius, fill;
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-  }
-  .team .staff__social-media-list .staff__social-media-link:hover {
-    background-color: #2196f3;
-    border-radius: 50%;
-  }
-  .team .staff__social-media-list .staff__social-media-link:hover .social-media {
-    fill: #fff;
-  }
-  .team .staff__social-media-list .social-media {
-    fill: #afb1b8;
   }
   .clients {
     padding-top: 94px;
@@ -947,21 +882,6 @@ img {
             text-decoration-skip-ink: none;
     color: #2196f3;
   }
-}
-@media screen and (min-width: 1200px) {
-  .modal-form {
-    margin-left: 0;
-    padding-left: 40px;
-  }
-  .modal-form .modal-item .form-input, .modal-form .modal-item .form-comment {
-    width: 448px;
-    margin-top: 4px;
-  }
-  .modal-form .modal-item .rules {
-    width: 400px;
-  }
-}
-@media screen and (min-width: 480px) {
   .rossete-form {
     width: 450px;
     margin: 0 auto;
@@ -978,12 +898,18 @@ img {
     margin-top: 20px;
   }
 }
-@media screen and (min-width: 768px) {
-  .rosette {
-    margin-top: 60px;
-  }
-}
 @media screen and (min-width: 1200px) {
+  .modal-form {
+    margin-left: 0;
+    padding-left: 40px;
+  }
+  .modal-form .modal-item .form-input, .modal-form .modal-item .form-comment {
+    width: 448px;
+    margin-top: 4px;
+  }
+  .modal-form .modal-item .rules {
+    width: 400px;
+  }
   .rossete-form {
     width: 570px;
     display: flex;
@@ -991,6 +917,11 @@ img {
   .rossete-input {
     width: 358px;
     height: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .rosette {
+    margin-top: 60px;
   }
 }
 @media screen and (min-width: 480px) {
