@@ -1,3 +1,6 @@
+
+
+
 .main__hero-btn {
   @extend %btn;
   padding: 10px 32px;
@@ -7,6 +10,17 @@
 
 
 @media screen and (min-width: 480px) {
+  .header-btn {
+    border: none;
+    background-color: transparent;
+    margin-left: 276px;
+    .btn-icon {
+      margin-top: -10px;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
   .modal-btn {
     @include wh(30px, 30px);
     @include display(flex, center);

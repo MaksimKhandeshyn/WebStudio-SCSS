@@ -1,22 +1,53 @@
-.contact-list {
-  @include display(flex, center);
-  margin-left: auto;
-  .contact-item {
-    display: flex;
-    margin-left: 50px;
+@media screen and (min-width: 480px) {
+  // .contact-list {
+  //   display: none;
+  // }
+  .contact__list-item:first-child {
+    margin-top: 302px;
   }
-  .contact-link {
-    @include cl-txt($add-color, 14px, 0.28px);
-    @include display (flex, center);
-    @extend %transtion;
-    margin-left: 10px;
-    &:focus,
-    &:hover {
-      color: $accent-color;
-      fill: $accent-color;
+  .contact__list-item:last-child {
+    margin-top: 32px;
+    margin-bottom: 64px;
+  }
+  .contact__list-link {
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    color: $add-color;
+  }
+  .tel-link {
+    font-size: 34px;
+    color: $accent-color;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact-list {
+    display: block;
+    margin-left: auto;
+    .contact-item {
+      display: flex;
+      margin-left: 50px;
+    }
+    .contact-link {
+      @include cl-txt($add-color, 14px, 0.28px);
+      @include display(flex, center);
+
+      transition-property: color fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      &:focus,
+      &:hover {
+        color: $accent-color;
+        fill: $accent-color;
+      }
+    }
+    .contact-icon {
+      margin-right: 10px;
     }
   }
-  .contact-icon {
-    margin-right: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .contact-list {
+    display: flex;
   }
 }
