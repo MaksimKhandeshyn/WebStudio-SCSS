@@ -1,7 +1,10 @@
 @media screen and (min-width: 480px) {
   
   .header-media {
-    // display: none;
+    display: flex;
+    .header__media-item:last-child {
+      padding-bottom: 48px;
+    }
     .header__media-item:not(:last-child):after {
       content: "";
       border: 1px solid rgba(33, 33, 33, 0.2);
@@ -31,6 +34,7 @@
   }
 }
 .header {
+  position: relative;
   @include paddings(24px, 24px);
   .logo {
     font-family: Raleway;

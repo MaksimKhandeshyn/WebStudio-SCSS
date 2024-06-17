@@ -1,6 +1,9 @@
 @media screen and (min-width: 480px) {
   .nav__list-item {
     margin-top: 35px;
+    &:first-child {
+      margin-top: 40px;
+    }
     .nav__list-link {
       font-weight: 500;
       font-size: 40px;
@@ -12,6 +15,7 @@
       &:focus {
         color: $accent-color;
       }
+      
     }
   }
 }
