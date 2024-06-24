@@ -2,16 +2,35 @@
   .logo-mobile {
     margin-left: 120px;
   }
+  .header-media {
+    display: flex;
+    margin-bottom: 50px;
+    .header__media-item:not(:last-child)::after {
+      content: "";
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      width: 22px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .header__media-link {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 122%;
+      letter-spacing: 0.02em;
+      color: $accent-color;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
-  .menu-container, .logo-mobile {
-    
+  .menu-container,
+  .logo-mobile {
     display: none;
   }
 }
 @media screen and (min-width: 1200px) {
-  .menu-container, .logo-mobile {
+  .menu-container,
+  .logo-mobile {
     display: none;
   }
 }

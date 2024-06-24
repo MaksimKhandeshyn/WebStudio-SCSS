@@ -13,6 +13,7 @@
     transform: translate(500px);
   
     transition: transform 250ms ease-in-out;
+    z-index: 1;
   }
   .menu-container.is-open {
     transform: translateX(0);
