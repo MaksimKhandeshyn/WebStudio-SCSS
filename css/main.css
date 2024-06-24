@@ -397,10 +397,10 @@ a {
     height: 92px;
     display: flex;
     justify-content: center;
-    flex-basis: calc(50% - 30px);
+    flex-basis: calc((100% - 30px) / 2);
     margin-top: 30px;
-    transition-property: cursor, fill;
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: border, border-radius, fill, cursor;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
   }
   .clients .logo__clients-list .logo__clients-item:hover {
@@ -410,6 +410,12 @@ a {
   }
   .clients .logo__clients-list .logo__clients-item:hover .logo__clients-icon {
     fill: #2196f3;
+    transition-property: fill;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+  }
+  .clients .logo__clients-list .logo__clients-item:nth-child(odd) {
+    margin-right: 30px;
   }
   .clients .logo__clients-list .logo__clients-item .logo__clients-link {
     margin-top: 16px;
@@ -417,9 +423,6 @@ a {
   .clients .logo__clients-list .logo__clients-item .logo__clients-icon {
     height: 60px;
     fill: #afb1b8;
-  }
-  .clients .logo__clients-list .logo__clients-item:nth-child(odd) {
-    margin-right: 30px;
   }
   .backdrop {
     position: fixed;
@@ -480,7 +483,7 @@ a {
     flex-wrap: wrap;
   }
   .praise .strength__praise-list .strength__praiser-item {
-    flex-basis: 355px;
+    flex-basis: calc((100% - 30px) / 2);
     margin-top: 0;
   }
   .praise .strength__praise-list .strength__praiser-item .strength__icon-container {
@@ -503,21 +506,26 @@ a {
   }
   .team .staff__team-list .staff__team-item {
     height: auto;
-    flex-basis: calc(50% - 30px);
-    margin-right: 30px;
+    flex-basis: calc((100% - 30px) / 2);
   }
   .team .staff__team-list .staff__team-item .employee {
     height: auto;
   }
+  .team .staff__team-list .staff__team-item:nth-child(even) {
+    margin-left: 30px;
+  }
   .clients .logo__clients-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
   .clients .logo__clients-list .logo__clients-item {
     width: 226px;
     height: 92px;
-    flex-basis: calc(33.3333333333% - 30px);
-    margin-right: 30px;
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  .clients .logo__clients-list .logo__clients-item:nth-child(odd) {
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -573,7 +581,6 @@ a {
     gap: 30px;
   }
   .what-we-doing .job__what-we-doing-list .job__what-we-are-doing-item {
-    flex-basis: 370px;
     position: relative;
   }
   .what-we-doing .job__name-photo {
@@ -623,6 +630,12 @@ a {
     justify-content: center;
     margin-top: 50px;
     flex-wrap: nowrap;
+  }
+  .clients .logo__clients-list .logo__clients-item {
+    margin-right: 30px;
+  }
+  .clients .logo__clients-list .logo__clients-item:nth-child(odd) {
+    margin-right: 30px;
   }
   .clients .logo__clients-icon {
     width: 106px;
