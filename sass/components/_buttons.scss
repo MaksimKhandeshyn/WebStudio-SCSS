@@ -3,6 +3,7 @@
   padding: 10px 32px;
   display: flex;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  margin-left: 45px;
 }
 .header-btn {
     position: absolute; 
@@ -168,6 +169,13 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .main__hero-btn {
+  @extend %btn;
+  padding: 10px 32px;
+  display: flex;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  margin-left: auto;
+}
   .modal-btn {
     left: 490px;
   }
