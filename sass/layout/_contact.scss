@@ -1,3 +1,20 @@
+.contact__list-item:first-child {
+    margin-top: 100px;
+  }
+  .contact__list-item:last-child {
+    margin-top: 32px;
+    margin-bottom: 64px;
+  }
+  .contact__list-link {
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    color: $add-color;
+  }
+  .tel-link {
+    font-size: 34px;
+    color: $accent-color;
+  }
 @media screen and (min-width: 480px){
   .contact__list-item:first-child {
     margin-top: 302px;

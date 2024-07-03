@@ -1,3 +1,5 @@
+
+
 @media screen and (min-width: 480px) {
   .hero {
     width: 480px;
@@ -184,7 +186,6 @@
     pointer-events: none;
   }
 }
-
 @media screen and (min-width: 768px) {
   .hero {
     @include paddings(118px, 118px);
