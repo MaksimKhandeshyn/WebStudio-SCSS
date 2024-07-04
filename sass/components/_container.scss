@@ -36,10 +36,11 @@
     display: none;
   }
   .strength__icon-container {
-    padding: 25px 190px;
+    padding: 25px 175px;
     height: 120px;
     background-color: #f5f4fa;
     border-radius: 4px;
+    width: 415px;
   }
 @media screen and (min-width: 480px) {
   .menu-container {
@@ -72,7 +73,6 @@
     border-radius: 4px;
   }
 }
-
 @media screen and (min-width: 768px) {
   .header-btn {
     display: none;

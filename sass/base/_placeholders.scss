@@ -1,5 +1,5 @@
 %transtion {
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: box-shadow, background, color, fill, background-color,
     border-radius, border, content, width, height, position, top, left, cursor,
     overflow, transform, border-style, padding;
