@@ -1,3 +1,67 @@
+.footer {
+  @include paddings(60px, 60px);
+  background-color: $bg-color;
+  min-width: 460px;
+  max-width: 1600px;
+  .logo {
+    font-family: Raleway;
+    @include cl-txt(#fff, 26px, 0.78px);
+    display: flex;
+    justify-content: center;
+  }
+  .first-part-logo {
+    color: $accent-color;
+  }
+  .address {
+    margin: 0 auto;
+    text-align: center;
+    width: 232px;
+    height: 79px;
+    margin-top: 20px;
+    .footer-contact {
+      font-style: normal;
+      @include cl-txt($add-color, 14px, 0.42px);
+
+      &:first-child {
+        line-height: 1.71;
+        color: #fff;
+      }
+    }
+  }
+  .sm-title {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+  }
+  .sm-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    .sm-item {
+      margin-right: 10px;
+      background: rgba(255, 255, 255, 0.1);
+      @include wh(44px, 44px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      .sm-icon {
+        fill: #fff;
+      }
+    }
+  }
+
+  .rosette-title {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+  }
+}
 @media screen and (min-width: 480px) {
   .footer {
     @include paddings(60px, 60px);

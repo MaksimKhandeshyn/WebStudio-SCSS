@@ -91,16 +91,6 @@
           width: 44px;
           height: 44px;
           justify-content: center;
-          transition-property: background-color, border-radius, fill;
-          transition: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-duration: 250ms;
-          &:hover {
-            background-color: $accent-color;
-            border-radius: 50%;
-          }
-          &:hover .social-media {
-            fill: #fff;
-          }
         }
         .social-media {
           fill: #afb1b8;
@@ -131,20 +121,6 @@
       justify-content: center;
       flex-basis: calc((100% - 1 * 30px) / 2);
       margin-top: 30px;
-
-      transition-property: border, border-radius, fill, cursor;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      transition-duration: 250ms;
-      &:hover {
-        @include border(1px solid $accent-color, 4px);
-        cursor: pointer;
-      }
-      &:hover .logo__clients-icon {
-        fill: $accent-color;
-        transition-property: fill;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 250ms;
-      }
       &:nth-child(odd) {
         margin-right: 30px;
       }

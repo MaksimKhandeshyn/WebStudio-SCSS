@@ -1,3 +1,82 @@
+.modal-form {
+  width: 370px;
+  height: 342px;
+  margin: 0 auto;
+  .modal-item {
+    position: relative;
+    .name-icon {
+      @include located-ob(absolute, 30px, 12px);
+    }
+    .tel-icon {
+      @include located-ob(absolute, 30px, 12px);
+    }
+    .mail-icon {
+      @include located-ob(absolute, 30px, 12px);
+    }
+    .form-label {
+      font-size: 12px;
+      letter-spacing: 0.01em;
+      color: $add-color;
+    }
+    .form-input,
+    .form-comment {
+      resize: none;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 4px;
+      width: 370px;
+      height: 40px;
+      margin-bottom: 10px;
+      padding-left: 42px;
+      outline: none;
+      transition-property: border-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      &:focus,
+      &:focus {
+        border-color: $accent-color;
+      }
+    }
+
+    .form-comment {
+      font-size: 14px;
+      letter-spacing: 0.01em;
+      padding-top: 12px;
+      padding-left: 16px;
+      color: rgba(117, 117, 117, 0.5);
+      height: 120px;
+    }
+    .rules {
+      display: flex;
+      .rules-text {
+        font-size: 12px;
+        letter-spacing: 0.03em;
+        color: $add-color;
+        margin-left: 8px;
+        .rules-link {
+          text-decoration: underline;
+          text-decoration-skip-ink: none;
+          color: $accent-color;
+        }
+      }
+    }
+  }
+}
+.rossete-form {
+  width: 450px;
+  margin: 0 auto;
+}
+.rossete-input {
+  margin: 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  width: 435px;
+  height: 50px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: transparent;
+  padding-left: 16px;
+  margin-top: 20px;
+}
+
 @media screen and (min-width: 480px) {
   .modal-form {
     width: 370px;
@@ -78,12 +157,13 @@
     margin-top: 20px;
   }
 }
-@media screen  and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .modal-form {
     margin-left: 0;
     padding-left: 40px;
     .modal-item {
-      .form-input, .form-comment {
+      .form-input,
+      .form-comment {
         width: 448px;
         margin-top: 4px;
       }
@@ -106,4 +186,3 @@
     margin-top: 60px;
   }
 }
-
