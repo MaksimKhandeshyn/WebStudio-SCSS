@@ -209,6 +209,7 @@
     display: none;
   }
   .team {
+    width: auto;
     @include paddings(60px, 60px);
     background-color: #f5f4fa;
     .staff__team-title {
@@ -254,16 +255,6 @@
             width: 44px;
             height: 44px;
             justify-content: center;
-            transition-property: background-color, border-radius, fill;
-            transition: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-duration: 250ms;
-            &:hover {
-              background-color: $accent-color;
-              border-radius: 50%;
-            }
-            &:hover .social-media {
-              fill: #fff;
-            }
           }
           .social-media {
             fill: #afb1b8;
@@ -293,20 +284,6 @@
         justify-content: center;
         flex-basis: calc((100% - 1 * 30px) / 2);
         margin-top: 30px;
-
-        transition-property: border, border-radius, fill, cursor;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 250ms;
-        &:hover {
-          @include border(1px solid $accent-color, 4px);
-          cursor: pointer;
-        }
-        &:hover .logo__clients-icon {
-          fill: $accent-color;
-          transition-property: fill;
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-duration: 250ms;
-        }
         &:nth-child(odd) {
           margin-right: 30px;
         }
@@ -392,6 +369,7 @@
     display: none;
   }
   .team {
+    width: auto;
     .staff__team-list {
       display: flex;
       flex-wrap: wrap;
@@ -408,6 +386,7 @@
     }
   }
   .clients {
+    width: auto;
     .logo__clients-list {
       display: flex;
       flex-wrap: wrap;
@@ -446,10 +425,14 @@
       flex-wrap: nowrap;
       .strength__praiser-item {
         margin-right: 30px;
+        width: 270px;
         .strength__icon-container {
           width: 270px;
           height: 120px;
           padding: 25px 100px;
+        }
+        .strength__praiser-info {
+          width: 270px;
         }
       }
     }
@@ -489,6 +472,7 @@
   .team {
     padding-top: 94px;
     background-color: #f5f4fa;
+    width: auto;
     .staff__team-title {
       font-size: 36px;
       padding-bottom: 50px;
@@ -507,6 +491,7 @@
   }
   .clients {
     @include paddings(94px, 94px);
+    width: auto ;
     .logo__clients-title {
       font-size: 36px;
     }

@@ -2,7 +2,6 @@
   @include paddings(60px, 60px);
   background-color: $bg-color;
   min-width: 460px;
-  max-width: 1600px;
   .logo {
     font-family: Raleway;
     @include cl-txt(#fff, 26px, 0.78px);
@@ -107,10 +106,12 @@
         margin-right: 10px;
         background: rgba(255, 255, 255, 0.1);
         @include wh(44px, 44px);
-        display: flex;
-        align-items: center;
-        justify-content: center;
         border-radius: 50%;
+        .sm-link {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
         .sm-icon {
           fill: #fff;
         }
@@ -143,12 +144,13 @@
 }
 @media screen and (min-width: 1200px) {
   .footer {
-    .footer-container {
-      position: relative;
-    }
+    width: auto;
     display: flex;
     background-color: $bg-color;
     @include paddings(60px, 60px);
+    .footer-container {
+      position: relative;
+    }
     .footer-social-media {
       display: flex;
       .footer-info {
