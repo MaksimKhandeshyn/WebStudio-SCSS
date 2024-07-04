@@ -531,6 +531,7 @@ a {
 .clients {
   padding-top: 60px;
   padding-bottom: 60px;
+  width: 460px;
 }
 .clients .logo__clients-title {
   color: #212121;
