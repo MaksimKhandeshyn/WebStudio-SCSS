@@ -27,14 +27,13 @@
       @include cl-txt($main-color, 14px, 0.42px);
       text-transform: uppercase;
       margin-top: 30px;
-      text-align: center
+      text-align: center;
     }
     .strength__praiser-info {
       @include cl-txt($add-color, 14px, 0.42px);
       line-height: 1.71;
       margin-top: 10px;
       width: 350px;
-      
     }
   }
   .strength__praiser-item:not(:first-child) {
@@ -351,10 +350,10 @@
       .strength__praiser-item {
         flex-basis: calc((100% - 1 * 30px) / 2);
         margin-top: 0;
-        .strength__icon-container {
-          width: 354px;
-          height: 120px;
-          padding: 25px 142px;
+        margin-left: 0;
+        width: 354px;
+        &:nth-child(odd) {
+        margin-right: 30px;
         }
         .strength__praiser-title {
           text-align: start;
@@ -426,11 +425,6 @@
       .strength__praiser-item {
         margin-right: 30px;
         width: 270px;
-        .strength__icon-container {
-          width: 270px;
-          height: 120px;
-          padding: 25px 100px;
-        }
         .strength__praiser-info {
           width: 270px;
         }
@@ -491,7 +485,7 @@
   }
   .clients {
     @include paddings(94px, 94px);
-    width: auto ;
+    width: auto;
     .logo__clients-title {
       font-size: 36px;
     }
@@ -501,13 +495,24 @@
       flex-wrap: nowrap;
       .logo__clients-item {
         margin-right: 30px;
+        transition-property: fill, border;
+        transition: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+        &:hover {
+          @include border(1px solid $accent-color, 4px);
+          cursor: pointer;
+        }
+        &:hover .logo__clients-icon {
+          fill: $accent-color;
+        }
         &:nth-child(odd) {
           margin-right: 30px;
         }
       }
     }
     .logo__clients-icon {
-      @include wh(106px, 60px);
+      transition: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 250ms;
     }
   }
   .backdrop {
