@@ -675,6 +675,7 @@ a {
   .clients {
     padding-top: 60px;
     padding-bottom: 60px;
+    width: auto;
   }
   .clients .logo__clients-title {
     color: #212121;
@@ -1209,7 +1210,7 @@ a {
     padding-top: 24px;
   }
   .header .logo-mobile {
-    margin-left: 120px;
+    margin-left: 45px;
   }
   .header .header-media {
     display: flex;

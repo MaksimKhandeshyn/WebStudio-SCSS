@@ -267,6 +267,7 @@
   }
   .clients {
     @include paddings(60px, 60px);
+    width: auto;
     .logo__clients-title {
       @include cl-txt($main-color, 28px, 0.03em);
       text-align: center;
