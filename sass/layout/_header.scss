@@ -1,5 +1,6 @@
 .header {
   position: relative;
+  
   @include paddings(35px, 24px);
   .logo {
     font-family: Raleway;
@@ -59,10 +60,14 @@
       }
     }
   }
+  
 }
 @media screen and (min-width: 768px) {
   .header {
     padding-top: 24px;
+  }
+  .header-portfolio {
+    border-bottom: 1px solid #ececec;
   }
   .menu-container,
   .logo-mobile {
@@ -72,6 +77,9 @@
 @media screen and (min-width: 1200px) {
   .header {
     padding-top: 24px;
+  }
+  .header-portfolio {
+    border-bottom: 1px solid #ececec;
   }
   .menu-container,
   .logo-mobile {

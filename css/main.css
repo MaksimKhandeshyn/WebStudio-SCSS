@@ -1234,6 +1234,9 @@ a {
   .header {
     padding-top: 24px;
   }
+  .header-portfolio {
+    border-bottom: 1px solid #ececec;
+  }
   .menu-container,
   .logo-mobile {
     display: none;
@@ -1242,6 +1245,9 @@ a {
 @media screen and (min-width: 1200px) {
   .header {
     padding-top: 24px;
+  }
+  .header-portfolio {
+    border-bottom: 1px solid #ececec;
   }
   .menu-container,
   .logo-mobile {
