@@ -373,8 +373,8 @@ a {
   height: 400px;
   padding-top: 118px;
   padding-bottom: 200px;
-  background: url("../images/header-mobile.jpg"), linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4));
   margin: 0 auto;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4)), url(/images/header-mobile.jpg);
   margin-top: 10px;
 }
 .hero .main__hero-title {
@@ -567,7 +567,7 @@ a {
     height: 400px;
     padding-top: 118px;
     padding-bottom: 200px;
-    background-image: url("../images/header-mobile.jpg"), linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4));
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4)), url(/images/header-mobile.jpg);
     background-repeat: no-repeat;
     margin: 0 auto;
     margin-top: 10px;
@@ -750,7 +750,7 @@ a {
     padding-bottom: 118px;
     width: 768px;
     height: 400px;
-    background: url("../images/bg-tablet.jpg"), linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4)), no-repeat;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4)), url(/images/bg-tablet.jpg);
   }
   .hero .main__hero-title {
     width: 360px;
@@ -824,7 +824,7 @@ a {
     width: 1600px;
     height: 600px;
     margin-top: 0;
-    background: url("../images/hero-bg.jpg"), linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4)), no-repeat;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4)), url(/images/hero-bg.jpg);
   }
   .hero .main__hero-title {
     font-size: 44px;
