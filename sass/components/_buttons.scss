@@ -5,64 +5,84 @@
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .header-btn {
-    position: absolute; 
-    left: 370px;
-    border: none;
-    background-color: transparent;
-    .btn-icon {
-      margin-top: -10px;
-    }
-    &:hover {
-      cursor: pointer;
-    }
+  position: absolute;
+  left: 370px;
+  border: none;
+  background-color: transparent;
+  .btn-icon {
+    margin-top: -10px;
   }
-  .close-btn {
-    border: none;
-    background-color: transparent;
-    
-    
-    
-    position: absolute;
-    top: 10px;
-    right: 56px;
+  &:hover {
+    cursor: pointer;
   }
-  .modal-btn {
-    @include wh(30px, 30px);
-    @include display(flex, center);
-    @include border(1px solid rgba(0, 0, 0, 0.1), 100px);
-    position: absolute;
-    left: 412px;
-    background-color: transparent;
-    top: 8px;
+}
+.close-btn {
+  border: none;
+  background-color: transparent;
+
+  position: absolute;
+  top: 10px;
+  right: 56px;
+}
+.modal-btn {
+  @include wh(30px, 30px);
+  @include display(flex, center);
+  @include border(1px solid rgba(0, 0, 0, 0.1), 100px);
+  position: absolute;
+  left: 412px;
+  background-color: transparent;
+  top: 8px;
+}
+.send-btn {
+  background: $accent-color;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.96px;
+  border: none;
+  border-radius: 4px;
+  margin-left: 80px;
+  margin-top: 30px;
+  padding: 10px 52px;
+}
+.rossete-btn {
+  @include border(none, 4px);
+  @include wh(200px, 50px);
+  background: $accent-color;
+  line-height: 187%;
+  letter-spacing: 0.06em;
+  color: #fff;
+  margin-left: 140px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .rosette-icon {
+    margin-left: 12px;
   }
-  .send-btn {
-    background: $accent-color;
-    color: #fff;
-    font-weight: 700;
-    line-height: 1.87;
-    letter-spacing: 0.96px;
-    border: none;
-    border-radius: 4px;
-    margin-left: 80px;
-    margin-top: 30px;
-    padding: 10px 52px;
-  }
-  .rossete-btn {
+}
+.product__filter-btn {
+  border-radius: 4px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.48px;
+  border: none;
+  background-color: #f5f4fa;
+  padding: 6px 25px;
+  transition-property: border, border-radius, padding, background, color, cursor,
+    box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
     @include border(none, 4px);
-    @include wh(200px, 50px);
+    padding: 6px 25px;
     background: $accent-color;
-    line-height: 187%;
-    letter-spacing: 0.06em;
     color: #fff;
-    margin-left: 140px;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .rosette-icon {
-      margin-left: 12px;
-    }
+    cursor: pointer;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
+      0 3px 1px 0 rgba(0, 0, 0, 0.1);
   }
+}
 @media screen and (min-width: 480px) {
   .header-btn {
     position: absolute;
@@ -96,18 +116,6 @@
     background-color: transparent;
     top: 8px;
   }
-  .send-btn {
-    background: $accent-color;
-    color: #fff;
-    font-weight: 700;
-    line-height: 1.87;
-    letter-spacing: 0.96px;
-    border: none;
-    border-radius: 4px;
-    margin-left: 80px;
-    margin-top: 30px;
-    padding: 10px 52px;
-  }
   .rossete-btn {
     @include border(none, 4px);
     @include wh(200px, 50px);
@@ -127,41 +135,32 @@
 }
 @media screen and (min-width: 1200px) {
   .main__hero-btn {
-  @extend %btn;
-  padding: 10px 32px;
-  display: flex;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  margin-left: auto;
-}
+    @extend %btn;
+    padding: 10px 32px;
+    display: flex;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    margin-left: auto;
+  }
   .modal-btn {
     left: 490px;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      fill: $accent-color;
+    }
   }
   .send-btn {
     margin: 30px 113px;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    }
   }
   .rossete-btn {
     margin-left: 12px;
-  }
-}
-.product__filter-btn {
-  border-radius: 4px;
-  font-weight: 500;
-  line-height: 1.62;
-  letter-spacing: 0.48px;
-  border: none;
-  background-color: #f5f4fa;
-  padding: 6px 25px;
-  transition-property: border, border-radius, padding, background, color, cursor,
-    box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover {
-    @include border(none, 4px);
-    padding: 6px 25px;
-    background: $accent-color;
-    color: #fff;
-    cursor: pointer;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
-      0 3px 1px 0 rgba(0, 0, 0, 0.1);
   }
 }

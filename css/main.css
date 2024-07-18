@@ -262,6 +262,28 @@ a {
   margin-left: 12px;
 }
 
+.product__filter-btn {
+  border-radius: 4px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.48px;
+  border: none;
+  background-color: #f5f4fa;
+  padding: 6px 25px;
+  transition-property: border, border-radius, padding, background, color, cursor, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.product__filter-btn:hover {
+  border: none;
+  border-radius: 4px;
+  padding: 6px 25px;
+  background: #2196f3;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
 @media screen and (min-width: 480px) {
   .header-btn {
     position: absolute;
@@ -298,18 +320,6 @@ a {
     background-color: transparent;
     top: 8px;
   }
-  .send-btn {
-    background: #2196f3;
-    color: #fff;
-    font-weight: 700;
-    line-height: 1.87;
-    letter-spacing: 0.96px;
-    border: none;
-    border-radius: 4px;
-    margin-left: 80px;
-    margin-top: 30px;
-    padding: 10px 52px;
-  }
   .rossete-btn {
     border: none;
     border-radius: 4px;
@@ -338,36 +348,26 @@ a {
   }
   .modal-btn {
     left: 490px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .modal-btn:hover {
+    fill: #2196f3;
   }
   .send-btn {
     margin: 30px 113px;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .send-btn:hover {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   }
   .rossete-btn {
     margin-left: 12px;
   }
 }
-.product__filter-btn {
-  border-radius: 4px;
-  font-weight: 500;
-  line-height: 1.62;
-  letter-spacing: 0.48px;
-  border: none;
-  background-color: #f5f4fa;
-  padding: 6px 25px;
-  transition-property: border, border-radius, padding, background, color, cursor, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.product__filter-btn:hover {
-  border: none;
-  border-radius: 4px;
-  padding: 6px 25px;
-  background: #2196f3;
-  color: #fff;
-  cursor: pointer;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
-}
-
 .hero {
   width: 460px;
   height: 400px;
@@ -615,32 +615,9 @@ a {
     padding-bottom: 60px;
     background-color: #f5f4fa;
   }
-  .team .staff__team-title {
-    font-size: 28px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: #212121;
-    margin-bottom: 30px;
-  }
   .team .staff__team-item {
     width: 450px;
     height: 622px;
-    background-color: #fff;
-    margin-bottom: 94px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-  }
-  .team .staff__team-item .employee {
-    height: 460px;
-  }
-  .team .staff__team-item .staff__name {
-    font-weight: 500;
-    color: #212121;
-    font-size: 16px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    margin-top: 30px;
   }
   .team .staff__team-item .staff__position {
     color: #757575;
@@ -706,42 +683,6 @@ a {
   .clients .logo__clients-list .logo__clients-item .logo__clients-icon {
     height: 60px;
     fill: #afb1b8;
-  }
-  .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgba(47, 48, 58, 0.4);
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
-  }
-  .backdrop .modal {
-    border-radius: 4px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background-color: #fff;
-    width: 450px;
-    height: 609px;
-    transform: translate(-50%, -50%);
-  }
-  .backdrop .modal .modal-title {
-    font-size: 20px;
-    line-height: 150%;
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: #212121;
-    width: 370px;
-    margin: 0 auto;
-    margin-bottom: 12px;
-  }
-  .backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
   }
 }
 @media screen and (min-width: 768px) {

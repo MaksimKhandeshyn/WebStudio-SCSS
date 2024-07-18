@@ -216,31 +216,9 @@
     width: auto;
     @include paddings(60px, 60px);
     background-color: #f5f4fa;
-    .staff__team-title {
-      font-size: 28px;
-      letter-spacing: 0.03em;
-      text-align: center;
-      color: $main-color;
-      margin-bottom: 30px;
-    }
     .staff__team-item {
       width: 450px;
       height: 622px;
-      background-color: #fff;
-      margin-bottom: 94px;
-      border-bottom-left-radius: 8px;
-      border-bottom-right-radius: 8px;
-      box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-      .employee {
-        height: 460px;
-      }
-      .staff__name {
-        font-weight: 500;
-        @include cl-txt($main-color, 16px, 0.03em);
-        text-align: center;
-        margin-top: 30px;
-      }
       .staff__position {
         @include cl-txt($add-color, 16px, 0.03em);
         text-align: center;
@@ -301,36 +279,6 @@
         }
       }
     }
-  }
-  .backdrop {
-    @include pos(fixed, 0, 0, #2f303a66);
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
-      0 1px 3px 0 rgba(0, 0, 0, 0.12);
-    .modal {
-      border-radius: 4px;
-      @include paddings(40px, 40px);
-      @include pos(absolute, 50%, 50%, #fff);
-      width: 450px;
-      height: 609px;
-      transform: translate(-50%, -50%);
-      .modal-title {
-        font-size: 20px;
-        line-height: 150%;
-        letter-spacing: 0.03em;
-        text-align: center;
-        color: $main-color;
-        width: 370px;
-        margin: 0 auto;
-        margin-bottom: 12px;
-      }
-    }
-  }
-  .backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
   }
 }
 @media screen and (min-width: 768px) {
