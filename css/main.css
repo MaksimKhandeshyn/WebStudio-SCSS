@@ -373,8 +373,8 @@ a {
   height: 400px;
   padding-top: 118px;
   padding-bottom: 200px;
+  background: url("../images/header-mobile.jpg"), linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4));
   margin: 0 auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4)), url(/images/header-mobile.jpg);
   margin-top: 10px;
 }
 .hero .main__hero-title {
@@ -567,7 +567,7 @@ a {
     height: 400px;
     padding-top: 118px;
     padding-bottom: 200px;
-    background-image: url(/images/header-mobile.jpg), linear-gradient(rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4));
+    background: url("../images/header-mobile.jpg"), linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4));
     background-repeat: no-repeat;
     margin: 0 auto;
     margin-top: 10px;
@@ -691,7 +691,7 @@ a {
     padding-bottom: 118px;
     width: 768px;
     height: 400px;
-    background-image: url(/images/bg-tablet.jpg), linear-gradient(rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4));
+    background: url("../../images/bg-tablet.jpg"), linear-gradient(rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4));
   }
   .hero .main__hero-title {
     width: 360px;
@@ -765,7 +765,7 @@ a {
     width: 1600px;
     height: 600px;
     margin-top: 0;
-    background-image: url(/images/hero-bg.jpg), linear-gradient(rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4));
+    background-image: url("../../images/hero-bg.jpg"), linear-gradient(rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4));
   }
   .hero .main__hero-title {
     font-size: 44px;
@@ -1512,6 +1512,10 @@ a {
   .modal-form .modal-item .form-comment:focus,
   .modal-form .modal-item .form-comment:focus {
     border-color: #2196f3;
+  }
+  .modal-form .modal-item .form-input .form-input:focus ~ .input-icon,
+  .modal-form .modal-item .form-comment .form-input:focus ~ .input-icon {
+    fill: #2196f3;
   }
   .modal-form .modal-item .form-comment {
     font-size: 14px;

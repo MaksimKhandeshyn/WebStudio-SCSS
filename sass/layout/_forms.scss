@@ -110,8 +110,10 @@
         &:focus {
           border-color: $accent-color;
         }
+        .form-input:focus ~ .input-icon {
+          fill: $accent-color;
+        }
       }
-
       .form-comment {
         font-size: 14px;
         letter-spacing: 0.01em;
@@ -162,6 +164,7 @@
         width: 448px;
         margin-top: 4px;
       }
+      
       .rules {
         width: 400px;
       }
