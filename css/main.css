@@ -167,6 +167,7 @@ a {
   }
   .container-position {
     display: flex;
+    align-items: center;
   }
   .strength__icon-container {
     padding: 25px 142px;
@@ -1360,6 +1361,9 @@ a {
     display: flex;
     margin-left: 50px;
   }
+  .contact-list .contact-item:first-child {
+    margin-bottom: 10px;
+  }
   .contact-list .contact-link {
     color: #757575;
     font-size: 14px;
@@ -1423,6 +1427,9 @@ a {
 .modal-form .modal-item .form-comment:focus,
 .modal-form .modal-item .form-comment:focus {
   border-color: #2196f3;
+}
+.modal-form .modal-item .form-input:focus ~ .input-icon {
+  fill: #2196f3;
 }
 .modal-form .modal-item .form-comment {
   font-size: 14px;
@@ -1513,10 +1520,6 @@ a {
   .modal-form .modal-item .form-comment:focus {
     border-color: #2196f3;
   }
-  .modal-form .modal-item .form-input .form-input:focus ~ .input-icon,
-  .modal-form .modal-item .form-comment .form-input:focus ~ .input-icon {
-    fill: #2196f3;
-  }
   .modal-form .modal-item .form-comment {
     font-size: 14px;
     letter-spacing: 0.01em;
@@ -1556,6 +1559,11 @@ a {
     margin-top: 20px;
   }
 }
+@media screen and (min-width: 768px) {
+  .rosette {
+    margin-top: 60px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal-form {
     margin-left: 0;
@@ -1565,6 +1573,21 @@ a {
   .modal-form .modal-item .form-comment {
     width: 448px;
     margin-top: 4px;
+  }
+  .modal-form .modal-item .name-icon {
+    position: absolute;
+    top: 33px;
+    left: 12px;
+  }
+  .modal-form .modal-item .tel-icon {
+    position: absolute;
+    top: 33px;
+    left: 12px;
+  }
+  .modal-form .modal-item .mail-icon {
+    position: absolute;
+    top: 33px;
+    left: 12px;
   }
   .modal-form .modal-item .rules {
     width: 400px;
@@ -1576,11 +1599,6 @@ a {
   .rossete-input {
     width: 358px;
     height: 50px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .rosette {
-    margin-top: 60px;
   }
 }
 .footer {
@@ -1724,6 +1742,7 @@ a {
 @media screen and (min-width: 768px) {
   .footer-social-media {
     display: flex;
+    justify-content: center;
   }
   .footer-social-media .footer-info {
     margin-right: 165px;
@@ -1749,6 +1768,7 @@ a {
   }
   .footer .footer-social-media {
     display: flex;
+    justify-content: start;
   }
   .footer .footer-social-media .footer-info {
     margin-right: 0;

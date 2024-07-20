@@ -83,7 +83,6 @@
       .footer-contact {
         font-style: normal;
         @include cl-txt($add-color, 14px, 0.42px);
-
         &:first-child {
           line-height: 1.71;
           color: #fff;
@@ -130,6 +129,7 @@
 @media screen and (min-width: 768px) {
   .footer-social-media {
     display: flex;
+    justify-content: center;
     .footer-info {
       margin-right: 165px;
     }
@@ -153,6 +153,7 @@
     }
     .footer-social-media {
       display: flex;
+      justify-content: start;
       .footer-info {
         margin-right: 0;
       }

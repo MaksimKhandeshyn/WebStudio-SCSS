@@ -41,6 +41,9 @@
     .contact-item {
       display: flex;
       margin-left: 50px;
+      &:first-child {
+        margin-bottom: 10px;
+      }
     }
     .contact-link {
       @include cl-txt($add-color, 14px, 0.28px);
