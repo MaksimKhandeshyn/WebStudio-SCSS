@@ -261,7 +261,13 @@
         display: flex;
         justify-content: center;
         flex-basis: calc((100% - 1 * 30px) / 2);
-        margin-top: 30px;
+        margin-top: 30px; 
+        &:hover {
+          border-color: $accent-color;
+          .logo__clients-icon {
+            fill: $accent-color;
+          }
+        }
         &:nth-child(odd) {
           margin-right: 30px;
         }
@@ -342,6 +348,12 @@
         width: 226px;
         height: 92px;
         flex-basis: calc((100% - 2 * 30px) / 3);
+        &:hover {
+          border-color: $accent-color;
+          .logo__clients-icon {
+            fill: $accent-color;
+          }
+        }
         &:nth-child(odd) {
           margin-right: 0;
         }

@@ -168,8 +168,6 @@
       display: flex;
       flex-wrap: wrap;
       .product__projects-item {
-        width: 354px;
-        height: 440px;
 
         flex-basis: calc(100% / 2 - 30px);
         &:nth-child(even) {

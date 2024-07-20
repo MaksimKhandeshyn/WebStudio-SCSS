@@ -675,6 +675,12 @@ a {
     flex-basis: calc((100% - 30px) / 2);
     margin-top: 30px;
   }
+  .clients .logo__clients-list .logo__clients-item:hover {
+    border-color: #2196f3;
+  }
+  .clients .logo__clients-list .logo__clients-item:hover .logo__clients-icon {
+    fill: #2196f3;
+  }
   .clients .logo__clients-list .logo__clients-item:nth-child(odd) {
     margin-right: 30px;
   }
@@ -754,6 +760,12 @@ a {
     width: 226px;
     height: 92px;
     flex-basis: calc((100% - 60px) / 3);
+  }
+  .clients .logo__clients-list .logo__clients-item:hover {
+    border-color: #2196f3;
+  }
+  .clients .logo__clients-list .logo__clients-item:hover .logo__clients-icon {
+    fill: #2196f3;
   }
   .clients .logo__clients-list .logo__clients-item:nth-child(odd) {
     margin-right: 0;
@@ -1078,8 +1090,6 @@ a {
     flex-wrap: wrap;
   }
   .product .product__projects-list .product__projects-item {
-    width: 354px;
-    height: 440px;
     flex-basis: calc(50% - 30px);
   }
   .product .product__projects-list .product__projects-item:nth-child(even) {
