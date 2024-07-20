@@ -1419,8 +1419,8 @@ a {
 .modal-form .modal-item .form-comment {
   resize: none;
   margin-bottom: 10px;
-  transition-property: border-color;
-  transition-duration: 250ms;
+  transition-property: border-color, fill;
+  transition-duration: 2500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form .modal-item .form-input:focus, .modal-form .modal-item .form-input:focus,
@@ -1428,7 +1428,8 @@ a {
 .modal-form .modal-item .form-comment:focus {
   border-color: #2196f3;
 }
-.modal-form .modal-item .form-input:focus ~ .input-icon {
+.modal-form .modal-item .form-input:focus ~ .input-icon,
+.modal-form .modal-item .form-comment:focus ~ .input-icon {
   fill: #2196f3;
 }
 .modal-form .modal-item .form-comment {
@@ -1511,7 +1512,7 @@ a {
     margin-bottom: 10px;
     padding-left: 42px;
     outline: none;
-    transition-property: border-color;
+    transition-property: border-color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }

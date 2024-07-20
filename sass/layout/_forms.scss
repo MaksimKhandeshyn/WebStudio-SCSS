@@ -23,16 +23,16 @@
       resize: none;
       @extend %input-form;
       margin-bottom: 10px;
-      transition-property: border-color;
-      transition-duration: 250ms;
+      transition-property: border-color, fill;
+      transition-duration: 2500ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       &:focus,
       &:focus {
         border-color: $accent-color;
       }
-    }
-    .form-input:focus ~ .input-icon {
-      fill: $accent-color;
+      &:focus ~ .input-icon {
+        fill: $accent-color;
+      }
     }
     .form-comment {
       font-size: 14px;
@@ -105,7 +105,7 @@
         margin-bottom: 10px;
         padding-left: 42px;
         outline: none;
-        transition-property: border-color;
+        transition-property: border-color, fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         &:focus,
