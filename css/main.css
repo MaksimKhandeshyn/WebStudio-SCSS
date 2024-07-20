@@ -571,7 +571,6 @@ a {
     background: url("../images/header-mobile.jpg"), linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4));
     background-repeat: no-repeat;
     margin: 0 auto;
-    margin-top: 10px;
   }
   .hero .main__hero-title {
     font-weight: 900;
@@ -777,7 +776,6 @@ a {
     padding-bottom: 200px;
     width: 1600px;
     height: 600px;
-    margin-top: 0;
     background-image: url("../../images/hero-bg.jpg"), linear-gradient(rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4));
   }
   .hero .main__hero-title {
@@ -1276,18 +1274,20 @@ a {
   .nav .nav-list .nav-item:first-child::after {
     content: "";
     border-radius: 2px;
+    display: block;
     width: 47px;
     height: 4px;
-    transition-property: content border-radius background position top;
+    transition-property: content, border-radius, background, position, top;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   .nav .nav-list .nav-item:nth-child(2)::after {
     content: "";
+    display: block;
     border-radius: 2px;
     width: 47px;
     height: 4px;
-    transition-property: content border-radius background position top;
+    transition-property: content, border-radius, background, position, top;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -1320,6 +1320,14 @@ a {
   }
   .nav .nav-link:focus, .nav .nav-link:hover {
     color: #2196f3;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav .nav-list .nav-item:first-child:hover::after {
+    top: 44px;
+  }
+  .nav .nav-list .nav-item:nth-child(2):hover::after {
+    top: 44px;
   }
 }
 .contact__list-item:first-child {
@@ -1380,7 +1388,7 @@ a {
     letter-spacing: 0.28px;
     display: flex;
     align-items: center;
-    transition-property: color fill;
+    transition-property: color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -1395,6 +1403,9 @@ a {
 @media screen and (min-width: 1200px) {
   .contact-list {
     display: flex;
+  }
+  .contact-list .contact-item:first-child {
+    margin-bottom: 0;
   }
 }
 .modal-form {
