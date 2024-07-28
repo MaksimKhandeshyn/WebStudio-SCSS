@@ -490,7 +490,7 @@
       .logo__clients-item {
         margin-right: 30px;
         transition-property: fill, border;
-        transition: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 250ms;
         &:hover {
           @include border(1px solid $accent-color, 4px);
@@ -505,7 +505,7 @@
       }
     }
     .logo__clients-icon {
-      transition: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       transition-duration: 250ms;
     }
   }
