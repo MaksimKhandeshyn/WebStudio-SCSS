@@ -25,6 +25,7 @@
         line-height: 1.71;
         color: #fff;
       }
+      
     }
   }
   .sm-title {
@@ -87,7 +88,15 @@
           line-height: 1.71;
           color: #fff;
         }
+        &:nth-child(2) {
+          display: block;
+          margin-top: 8px;
+          margin-bottom: 8px;
+        }
       }
+    }
+    .social-media-footer {
+      margin-top: 60px;
     }
     .sm-title {
       font-size: 14px;
@@ -116,7 +125,6 @@
         }
       }
     }
-
     .rosette-title {
       font-size: 14px;
       letter-spacing: 0.03em;
@@ -133,6 +141,9 @@
     .footer-info {
       margin-right: 165px;
     }
+  }
+  .social-media-footer {
+    margin-top: 0px;
   }
   .sm-link {
     width: 44px;
@@ -178,8 +189,9 @@
         &:first-child {
           color: #fff;
         }
-        &:last-child {
-          margin-top: -18px;
+        &:nth-child(2) {
+          margin-top: 0;
+          margin-bottom: 0;
         }
       }
     }

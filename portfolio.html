@@ -58,26 +58,26 @@
           </li>
         </ul>
       </div>
-      
+
       <button
-          class="header-btn js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg class="btn-icon" width="40" height="40">
-            <use href="./icons/symbol-defs(3).svg#icon-menu-btn"></use>
-          </svg>
-        </button>
-        <a href="#" class="logo-mobile logo link"
-          ><span class="first-part-logo">Web</span>Studio</a
-        >
-      <div class="menu-container js-menu-container" id="mobile-menu" >
+        class="header-btn js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="btn-icon" width="40" height="40">
+          <use href="./icons/symbol-defs(3).svg#icon-menu-btn"></use>
+        </svg>
+      </button>
+      <a href="./index.html" class="logo-mobile logo link"
+        ><span class="first-part-logo">Web</span>Studio</a
+      >
+      <div class="menu-container js-menu-container" id="mobile-menu">
         <button type="button" class="close-btn js-close-menu">
           <svg class="btn-icon" width="40" height="40">
             <use href="./icons/symbol-defs (2).svg#icon-form-close"></use>
           </svg>
         </button>
-        
+
         <nav class="nav">
           <ul class="nav-list list">
             <li class="nav__list-item">
@@ -98,9 +98,7 @@
             >
           </li>
           <li class="contact__list-item">
-            <a
-              href="mailto:info@devstudio.com"
-              class="contact__list-link link"
+            <a href="mailto:info@devstudio.com" class="contact__list-link link"
               >info@devstudio.com</a
             >
           </li>
@@ -122,7 +120,6 @@
             <a href="#" class="header__media-link">LInkedIn</a>
           </li>
         </ul>
-        
       </div>
     </header>
 
@@ -154,7 +151,11 @@
             <li class="product__projects-item">
               <div class="product__box-hover">
                 <img
-                  src="./images/techno.jpg"
+                  srcset="
+                    ./images/technokryk@1x.jpg 1x,
+                    ./images/technokryk@2x.jpg 2x
+                  "
+                  src="./images/technokryk@1x.jpg"
                   alt="site-on-laptop"
                   class="projects-img"
                 />
@@ -174,7 +175,8 @@
             <li class="product__projects-item">
               <div class="product__box-hover">
                 <img
-                  src="./images/poser.jpg"
+                  srcset="./images/poster@1x.jpg 1x, ./images/poster@2x.jpg 2x"
+                  src="./images/poster@1x.jpg"
                   alt="poster"
                   class="projects-img"
                 />
@@ -191,6 +193,7 @@
               </h3>
               <p class="product__projects-info">Дизайн</p>
             </li>
+
             <li class="product__projects-item">
               <div class="product__box-hover">
                 <img
@@ -209,6 +212,7 @@
               <h3 class="product__projects-title">Ресторан Seafood</h3>
               <p class="product__projects-info">Додаток</p>
             </li>
+
             <li class="product__projects-item">
               <div class="product__box-hover">
                 <img
@@ -227,6 +231,7 @@
               <h3 class="product__projects-title">Проєкт Prime</h3>
               <p class="product__projects-info">Маркетинг</p>
             </li>
+
             <li class="product__projects-item">
               <div class="product__box-hover">
                 <img src="./images/box.jpg" alt="boxes" class="projects-img" />
@@ -241,6 +246,7 @@
               <h3 class="product__projects-title">Проєкт Boxes</h3>
               <p class="product__projects-info">Додаток</p>
             </li>
+
             <li class="product__projects-item">
               <div class="product__box-hover">
                 <img
@@ -261,9 +267,14 @@
               </h3>
               <p class="product__projects-info">Веб-сайт</p>
             </li>
+
             <li class="product__projects-item">
               <div class="product__box-hover">
-                <img src="./images/articlelm.jpg" alt="article le" class="projects-img"/>
+                <img
+                  src="./images/articlelm.jpg"
+                  alt="article le"
+                  class="projects-img"
+                />
                 <p class="product__box-description">
                   <a href="#" class="text link">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -275,9 +286,14 @@
               <h3 class="product__projects-title">Видання Limited Edition</h3>
               <p class="product__projects-info">Дизайн</p>
             </li>
+
             <li class="product__projects-item">
               <div class="product__box-hover">
-                <img src="./images/label.jpg" alt="project-label" class="projects-img"/>
+                <img
+                  src="./images/label.jpg"
+                  alt="project-label"
+                  class="projects-img"
+                />
                 <p class="product__box-description">
                   <a href="#" class="text link">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -289,9 +305,14 @@
               <h3 class="product__projects-title">Проєкт LAB</h3>
               <p class="product__projects-info">Маркетинг</p>
             </li>
+
             <li class="product__projects-item">
               <div class="product__box-hover">
-                <img src="./images/buisness.jpg" alt="growing-buissness" class="projects-img"/>
+                <img
+                  src="./images/buisness.jpg"
+                  alt="growing-buissness"
+                  class="projects-img"
+                />
                 <p class="product__box-description">
                   <a href="#" class="text link">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -326,7 +347,7 @@
                 class="footer-contact link"
                 target="_blank"
                 >info@devstudio.com</a
-              ><br />
+              >
               <a
                 href="tel:+380961111111"
                 class="footer-contact link"

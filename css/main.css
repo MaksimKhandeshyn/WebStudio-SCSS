@@ -1735,6 +1735,14 @@ a {
     line-height: 1.71;
     color: #fff;
   }
+  .footer .address .footer-contact:nth-child(2) {
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .footer .social-media-footer {
+    margin-top: 60px;
+  }
   .footer .sm-title {
     font-size: 14px;
     letter-spacing: 0.03em;
@@ -1778,6 +1786,9 @@ a {
   }
   .footer-social-media .footer-info {
     margin-right: 165px;
+  }
+  .social-media-footer {
+    margin-top: 0px;
   }
   .sm-link {
     width: 44px;
@@ -1831,8 +1842,9 @@ a {
   .footer .address .footer-contact:first-child {
     color: #fff;
   }
-  .footer .address .footer-contact:last-child {
-    margin-top: -18px;
+  .footer .address .footer-contact:nth-child(2) {
+    margin-top: 0;
+    margin-bottom: 0;
   }
   .footer .social-media-footer {
     margin-left: 70px;
