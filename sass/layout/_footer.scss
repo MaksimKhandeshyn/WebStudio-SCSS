@@ -197,6 +197,7 @@
     }
     .social-media-footer {
       margin-left: 70px;
+      margin-top: 0;
       .sm-title {
         @include cl-txt(#fff, 14px, 0.03px);
         text-transform: uppercase;

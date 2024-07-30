@@ -716,7 +716,7 @@ a {
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background: url("../../images/hero-tablet@2x.jpg");
+    background: url("../../images/hero-tablet@2x.jpg"), linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4));
   }
 }
 @media screen and (min-width: 768px) {
@@ -1848,6 +1848,7 @@ a {
   }
   .footer .social-media-footer {
     margin-left: 70px;
+    margin-top: 0;
   }
   .footer .social-media-footer .sm-title {
     color: #fff;
