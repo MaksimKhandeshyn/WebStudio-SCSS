@@ -374,14 +374,15 @@ a {
   height: 400px;
   padding-top: 118px;
   padding-bottom: 200px;
-  background: url("../images/header-mobile.jpg"), linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4));
+  background: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4)), url("../images/header-mobile.jpg");
+  background-repeat: no-repeat;
   margin: 0 auto;
   margin-top: 10px;
 }
 .hero .main__hero-title {
   font-weight: 900;
   font-size: 26px;
-  line-height: 162%;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
@@ -573,23 +574,29 @@ a {
     height: 400px;
     padding-top: 118px;
     padding-bottom: 200px;
-    background: url("../images/header-mobile.jpg"), linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4));
+    background: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4)), url("../images/header-mobile.jpg");
     background-repeat: no-repeat;
     margin: 0 auto;
   }
   .hero .main__hero-title {
     font-weight: 900;
     font-size: 26px;
-    line-height: 162%;
+    line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
     color: #fff;
+    width: 360px;
   }
 }
 @media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .hero {
-    background: url("../../images/hero-mobile@2x.jpg");
+    background: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4)), url("../../images/hero-mobile@2x.jpg");
+    width: auto;
+    height: auto;
+  }
+  .hero .main__hero-title {
+    margin-top: 120px;
   }
 }
 @media screen and (min-width: 480px) {
@@ -706,7 +713,7 @@ a {
     padding-bottom: 118px;
     width: 768px;
     height: 400px;
-    background: url("../../images/hero-tablet@1x.jpg"), linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4));
+    background: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4)), url("../../images/hero-tablet@1x.jpg");
   }
   .hero .main__hero-title {
     width: 360px;
@@ -716,7 +723,9 @@ a {
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background: url("../../images/hero-tablet@2x.jpg"), linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4));
+    background: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4)), url("../../images/hero-tablet@2x.jpg");
+    width: auto;
+    height: auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -792,7 +801,7 @@ a {
     padding-bottom: 200px;
     width: 1600px;
     height: 600px;
-    background: url("../../images/hero-desktop@1x.jpg"), linear-gradient(rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4));
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4)), url("../../images/hero-desktop@1x.jpg");
   }
   .hero .main__hero-title {
     font-size: 44px;
@@ -803,7 +812,7 @@ a {
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background: url("../../images/hero-desktop@2x.jpg");
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4)), url("../../images/hero-desktop@2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1787,10 +1796,10 @@ a {
   .footer-social-media .footer-info {
     margin-right: 165px;
   }
-  .social-media-footer {
+  .footer-social-media .social-media-footer {
     margin-top: 0px;
   }
-  .sm-link {
+  .footer-social-media .sm-link {
     width: 44px;
     height: 44px;
     display: flex;
