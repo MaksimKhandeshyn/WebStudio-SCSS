@@ -766,11 +766,11 @@ a {
     height: auto;
     flex-basis: calc((100% - 30px) / 2);
   }
-  .team .staff__team-list .staff__team-item .employee {
-    height: auto;
-  }
   .team .staff__team-list .staff__team-item:nth-child(even) {
     margin-left: 30px;
+  }
+  .team .staff__team-list .staff__team-item .employee {
+    height: auto;
   }
   .clients {
     width: auto;
@@ -884,6 +884,9 @@ a {
   .team .staff__team-list {
     gap: 30px;
     flex-wrap: nowrap;
+  }
+  .team .staff__team-list .staff__team-item:nth-child(even) {
+    margin-left: 0;
   }
   .team .staff__social-media-list {
     display: flex;

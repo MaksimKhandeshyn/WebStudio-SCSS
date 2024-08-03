@@ -376,14 +376,14 @@
       display: flex;
       flex-wrap: wrap;
       .staff__team-item {
+        &:nth-child(even) {
+          margin-left: 30px;
+        }
         .employee {
           height: auto;
         }
         height: auto;
         flex-basis: calc((100% - 1 * 30px) / 2);
-        &:nth-child(even) {
-          margin-left: 30px;
-        }
       }
     }
   }
@@ -428,9 +428,11 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4)), url("../../images/hero-desktop@2x.jpg");
+      background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4)),
+        url("../../images/hero-desktop@2x.jpg");
     }
   }
+
   .praise {
     @include paddings(94px, 94px);
     .strength__praise-list {
@@ -488,12 +490,16 @@
     .staff__team-list {
       gap: 30px;
       flex-wrap: nowrap;
+      .staff__team-item:nth-child(even) {
+        margin-left: 0;
+      }
     }
     .staff__social-media-list {
       display: flex;
       justify-content: center;
       .staff__social-media-item {
         margin-right: 10px;
+        
         .staff__social-media-link {
           transition-property: border-radius, background-color;
           transition-duration: 250ms;
