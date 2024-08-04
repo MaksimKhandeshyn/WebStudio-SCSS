@@ -374,7 +374,7 @@ a {
   height: 400px;
   padding-top: 118px;
   padding-bottom: 200px;
-  background: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4)), url("../../images/hero-image@1x.png");
+  background: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4)), url("../images/hero-image@1x.png");
   background-repeat: no-repeat;
   margin: 0 auto;
   margin-top: 10px;
@@ -392,7 +392,7 @@ a {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero .hero {
-    background: url("../../images/hero-image@2x.png");
+    background: url("../images/hero-image@2x.png");
   }
 }
 
