@@ -181,14 +181,13 @@
     width: 480px;
     height: 400px;
     @include paddings(118px, 200px);
-    background: linear-gradient(
-        to bottom,
-        rgba(47, 48, 58, 0.4),
-        rgba(37, 48, 58, 0.4)
-      ),
-      url("../images/header-mobile.jpg");
+    background-color: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(37, 48, 58, 0.4)
+    );
     background-repeat: no-repeat;
-
+    background-image: url("/images/header-mobile.jpg");
     margin: 0 auto;
     .main__hero-title {
       font-weight: 900;
@@ -210,7 +209,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(37, 48, 58, 0.4)
         ),
-        url("../../images/hero-mobile@2x.jpg");
+        url("/images/hero-mobile@2x.jpg");
       width: auto;
       height: auto;
       .main__hero-title {
@@ -323,7 +322,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(37, 48, 58, 0.4)
       ),
-      url("../../images/hero-tablet@1x.jpg");
+      url("/images/hero-tablet@1x.jpg");
     .main__hero-title {
       width: 360px;
       margin: 0 auto;
@@ -339,7 +338,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(37, 48, 58, 0.4)
         ),
-        url("../../images/hero-tablet@2x.jpg");
+        url("/images/hero-tablet@2x.jpg");
       width: auto;
       height: auto;
     }
@@ -415,8 +414,11 @@
     @include paddings(200px, 200px);
     width: 1600px;
     height: 600px;
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4)),
-      url("../../images/hero-desktop@1x.jpg");
+    background-color: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(37, 48, 58, 0.4)
+    );
+    background-image: url("/images/hero-desktop@1x.jpg");
     .main__hero-title {
       font-size: 44px;
       line-height: 1.36;
@@ -428,8 +430,11 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(37, 48, 58, 0.4)),
-        url("../../images/hero-desktop@2x.jpg");
+      background-color: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(37, 48, 58, 0.4)
+      );
+      background-image: url("/images/hero-desktop@2x.jpg");
     }
   }
 
@@ -499,7 +504,7 @@
       justify-content: center;
       .staff__social-media-item {
         margin-right: 10px;
-        
+
         .staff__social-media-link {
           transition-property: border-radius, background-color;
           transition-duration: 250ms;
