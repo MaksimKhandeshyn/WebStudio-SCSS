@@ -1201,6 +1201,10 @@ a {
   color: #2196f3;
 }
 
+.header-portfolio {
+  border-bottom: 1px solid #ececec;
+}
+
 @media screen and (min-width: 480px) {
   .header {
     padding-top: 24px;
