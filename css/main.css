@@ -1149,14 +1149,14 @@ a {
     margin-bottom: 94px;
   }
   .product .product__projects-list .product__projects-item {
-    flex-basis: calc(33.3333333333% - 30px);
+    flex-basis: calc((100% - 60px) / 3);
     height: 404px;
   }
   .product .product__projects-list .product__projects-item:nth-child(even) {
-    margin-left: 8px;
+    margin-left: 0;
   }
   .product .product__projects-list .product__projects-item .product__box-description {
-    width: 359px;
+    width: 100%;
   }
   .product .product__projects-list .product__projects-item .product__box-description .text {
     width: 322px;
@@ -1226,6 +1226,9 @@ a {
     letter-spacing: 0.02em;
     color: #2196f3;
   }
+  .header-portfolio {
+    border-bottom: 1px solid #ececec;
+  }
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -1242,9 +1245,6 @@ a {
 @media screen and (min-width: 1200px) {
   .header {
     padding-top: 24px;
-  }
-  .header-portfolio {
-    border-bottom: 1px solid #ececec;
   }
   .menu-container,
   .logo-mobile {

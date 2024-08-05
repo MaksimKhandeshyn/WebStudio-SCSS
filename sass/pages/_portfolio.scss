@@ -168,7 +168,7 @@
       display: flex;
       flex-wrap: wrap;
       .product__projects-item {
-
+      
         flex-basis: calc(100% / 2 - 30px);
         &:nth-child(even) {
           margin-left: 30px;
@@ -196,17 +196,17 @@
       gap: 30px;
       margin-bottom: 94px;
       .product__projects-item {
+        flex-basis: calc((100% - 2 * 30px) / 3);
         &:nth-child(even) {
-          margin-left: 8px;
+          margin-left: 0;
         }
-        flex-basis: calc(100% / 3 - 30px);
         height: 404px;
         .product__box-description {
           .text {
             width: 322px;
             height: 168px;
           }
-          width: 359px;
+          width: 100%;
         }
       }
     }
