@@ -4,6 +4,7 @@
   @include paddings(35px, 24px);
   .logo {
     font-family: Raleway;
+    font-weight: 700;
     @include cl-txt(#000, 26px, 0.78px);
   }
   .first-part-logo {

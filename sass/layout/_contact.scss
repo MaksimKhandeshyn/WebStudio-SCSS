@@ -48,10 +48,9 @@
     .contact-link {
       @include cl-txt($add-color, 14px, 0.28px);
       @include display(flex, center);
-
       transition-property: color, fill;
       transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
       &:focus,
       &:hover {
         color: $accent-color;

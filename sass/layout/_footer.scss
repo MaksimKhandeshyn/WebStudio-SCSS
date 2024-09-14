@@ -3,10 +3,11 @@
   background-color: $bg-color;
   min-width: 460px;
   .logo {
-    font-family: Raleway;
-    @include cl-txt(#fff, 26px, 0.78px);
     display: flex;
     justify-content: center;
+    font-family: Raleway;
+    font-weight: 700;
+    @include cl-txt(#fff, 26px, 0.78px);
   }
   .first-part-logo {
     color: $accent-color;
